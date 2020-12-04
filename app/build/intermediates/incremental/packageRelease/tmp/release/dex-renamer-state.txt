@@ -1,0 +1,4 @@
+#Thu Dec 03 16:55:26 CST 2020
+base.0=E\:\\Develop\\OcrTool\\OcrTool\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

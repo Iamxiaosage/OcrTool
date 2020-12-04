@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Administrator\\Downloads\\aip-ocr-android-sdk-1.4.4\\OCRDemo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw\\values-sw.xml",
+            "outputFile": "E:\\Develop\\OcrTool\\OcrTool\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw\\values-sw.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\bd0e88e326c5a9372c6c1e387ad66353\\appcompat-v7-25.1.1\\res\\values-sw\\values-sw.xml",

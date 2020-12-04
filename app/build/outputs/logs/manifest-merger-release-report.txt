@@ -1,0 +1,163 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-27:12
+INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-27:12
+INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-27:12
+INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-27:12
+MERGED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:3:1-33:12
+MERGED from [com.android.support:appcompat-v7:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\bd0e88e326c5a9372c6c1e387ad66353\appcompat-v7-25.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:animated-vector-drawable:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a1116a66021a53fc786c55799622af63\animated-vector-drawable-25.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-vector-drawable:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\49ab02a608397319281d83811f2ad7b4\support-vector-drawable-25.1.1\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:support-v4:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\e7d77c1d6f7b4ab627cc929bcc70f748\support-v4-25.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-fragment:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\9600ee521676cb71d5d589bfbb74fed1\support-fragment-25.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-media-compat:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\136600f5c36e59975b690483ab8d2f94\support-media-compat-25.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-utils:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\b6475c4cb9f5c8ddab9041cc4d623ae4\support-core-utils-25.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-ui:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\27dc1d5062a9ae6a0a076eb38076af5e\support-core-ui-25.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-compat:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\17eab97e8b5fed646ae0a0f542096676\support-compat-25.1.1\AndroidManifest.xml:17:1-27:12
+INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-27:12
+INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-27:12
+INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-27:12
+	package
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:4:11-39
+		INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-27:12
+		INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-27:12
+		INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:11-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:6:5-79
+MERGED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:13:5-80
+MERGED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:13:5-80
+	android:name
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:6:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:7:5-80
+MERGED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:14:5-81
+MERGED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:14:5-81
+	android:name
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:7:22-78
+uses-permission#android.permission.INTERNET
+ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:8:5-66
+	android:name
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:8:22-64
+application
+ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:9:5-25:19
+MERGED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:20:5-31:19
+MERGED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:20:5-31:19
+MERGED from [com.android.support:appcompat-v7:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\bd0e88e326c5a9372c6c1e387ad66353\appcompat-v7-25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\bd0e88e326c5a9372c6c1e387ad66353\appcompat-v7-25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a1116a66021a53fc786c55799622af63\animated-vector-drawable-25.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a1116a66021a53fc786c55799622af63\animated-vector-drawable-25.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\49ab02a608397319281d83811f2ad7b4\support-vector-drawable-25.1.1\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-vector-drawable:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\49ab02a608397319281d83811f2ad7b4\support-vector-drawable-25.1.1\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-v4:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\e7d77c1d6f7b4ab627cc929bcc70f748\support-v4-25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\e7d77c1d6f7b4ab627cc929bcc70f748\support-v4-25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\9600ee521676cb71d5d589bfbb74fed1\support-fragment-25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\9600ee521676cb71d5d589bfbb74fed1\support-fragment-25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\136600f5c36e59975b690483ab8d2f94\support-media-compat-25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\136600f5c36e59975b690483ab8d2f94\support-media-compat-25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\b6475c4cb9f5c8ddab9041cc4d623ae4\support-core-utils-25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\b6475c4cb9f5c8ddab9041cc4d623ae4\support-core-utils-25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\27dc1d5062a9ae6a0a076eb38076af5e\support-core-ui-25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\27dc1d5062a9ae6a0a076eb38076af5e\support-core-ui-25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\17eab97e8b5fed646ae0a0f542096676\support-compat-25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\17eab97e8b5fed646ae0a0f542096676\support-compat-25.1.1\AndroidManifest.xml:25:5-20
+	android:supportsRtl
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:13:13-39
+	android:label
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:12:13-45
+	android:vmSafeMode
+		ADDED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:26:9-34
+	android:icon
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:11:13-47
+	android:allowBackup
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:10:13-39
+	android:theme
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:14:13-44
+activity#com.baidu.ocr.demo.MainActivity
+ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:15:9-21:20
+	android:name
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:15:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:17:17-68
+	android:name
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:19:17-76
+	android:name
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:19:27-74
+activity#com.baidu.ocr.demo.IDCardActivity
+ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:22:9-24:20
+	android:label
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:23:13-48
+	android:name
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:22:19-49
+uses-sdk
+INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml
+INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml
+MERGED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:8:5-10:41
+MERGED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:appcompat-v7:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\bd0e88e326c5a9372c6c1e387ad66353\appcompat-v7-25.1.1\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\bd0e88e326c5a9372c6c1e387ad66353\appcompat-v7-25.1.1\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a1116a66021a53fc786c55799622af63\animated-vector-drawable-25.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a1116a66021a53fc786c55799622af63\animated-vector-drawable-25.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\49ab02a608397319281d83811f2ad7b4\support-vector-drawable-25.1.1\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-vector-drawable:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\49ab02a608397319281d83811f2ad7b4\support-vector-drawable-25.1.1\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-v4:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\e7d77c1d6f7b4ab627cc929bcc70f748\support-v4-25.1.1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\e7d77c1d6f7b4ab627cc929bcc70f748\support-v4-25.1.1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\9600ee521676cb71d5d589bfbb74fed1\support-fragment-25.1.1\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\9600ee521676cb71d5d589bfbb74fed1\support-fragment-25.1.1\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\136600f5c36e59975b690483ab8d2f94\support-media-compat-25.1.1\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\136600f5c36e59975b690483ab8d2f94\support-media-compat-25.1.1\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\b6475c4cb9f5c8ddab9041cc4d623ae4\support-core-utils-25.1.1\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\b6475c4cb9f5c8ddab9041cc4d623ae4\support-core-utils-25.1.1\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\27dc1d5062a9ae6a0a076eb38076af5e\support-core-ui-25.1.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\27dc1d5062a9ae6a0a076eb38076af5e\support-core-ui-25.1.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\17eab97e8b5fed646ae0a0f542096676\support-compat-25.1.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\17eab97e8b5fed646ae0a0f542096676\support-compat-25.1.1\AndroidManifest.xml:21:5-23:58
+INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml
+INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\bd0e88e326c5a9372c6c1e387ad66353\appcompat-v7-25.1.1\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.CAMERA
+ADDED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:12:5-65
+	android:name
+		ADDED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:12:22-62
+uses-feature#android.hardware.camera2.full
+ADDED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:16:5-66
+	android:name
+		ADDED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:16:19-63
+uses-feature#android.hardware.camera
+ADDED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:17:5-60
+	android:name
+		ADDED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:17:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:18:5-70
+	android:name
+		ADDED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:18:19-67
+activity#com.baidu.ocr.ui.camera.CameraActivity
+ADDED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:27:9-30:80
+	android:configChanges
+		ADDED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:29:13-59
+	android:theme
+		ADDED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:30:13-77
+	android:name
+		ADDED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:28:13-66

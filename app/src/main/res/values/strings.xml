@@ -1,6 +1,41 @@
 <resources>
-    <string name="app_name">OCR_SDK</string>
+    <string name="app_name">OCR_Tools</string>
     <string name="idCardLabel">身份证识别</string>
     <string name="bankCardLabel">银行卡识别</string>
     <string name="generalLabel">通用文字识别</string>
+
+
+<!--    银行卡-->
+    <string name="bank_card_num">银行卡号</string>
+    <string name="bank_name">银行名</string>
+    <string name="bank_card_type">银行卡类型</string>
+
+
+<!--    营业执照-->
+    <string name="log_id">日志编号</string>
+    <string name="socal_credit_code">社会信用代码</string>
+    <string name="composeForm">组成形式</string>
+    <string name="manageScope">经营范围</string>
+    <string name="establishDate">成立日期</string>
+    <string name="legalPerson">法人</string>
+    <string name="registerCapital">注册资本</string>
+    <string name="licenseNum">证件编号</string>
+    <string name="address">地址</string>
+    <string name="companyName">单位名称</string>
+    <string name="validityDate">有效期</string>
+    <string name="type">类型</string>
+
+
+    <!--    身份证-->
+    <string name="issueAuthority">签发机关</string>
+    <string name="signDate">签署日期</string>
+    <string name="expiryDate">到期日</string>
+
+
+    <string name="idNumber">身份证号码</string>
+    <string name="name">姓名</string>
+    <string name="gender">性别</string>
+    <string name="ethnic">民族</string>
+
+
 </resources>

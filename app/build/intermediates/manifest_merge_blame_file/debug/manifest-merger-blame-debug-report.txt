@@ -7,78 +7,78 @@
 7
 8    <uses-sdk
 9        android:minSdkVersion="14"
-9-->C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\app\src\main\AndroidManifest.xml
+9-->E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml
 10        android:targetSdkVersion="25" />
-10-->C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\app\src\main\AndroidManifest.xml
+10-->E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml
 11
 12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-12-->C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\app\src\main\AndroidManifest.xml:6:5-79
-12-->C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\app\src\main\AndroidManifest.xml:6:22-77
+12-->E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:6:5-79
+12-->E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:6:22-77
 13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-13-->C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\app\src\main\AndroidManifest.xml:7:5-80
-13-->C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\app\src\main\AndroidManifest.xml:7:22-78
+13-->E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:7:5-80
+13-->E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:7:22-78
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\app\src\main\AndroidManifest.xml:8:5-66
-14-->C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\app\src\main\AndroidManifest.xml:8:22-64
+14-->E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:8:5-66
+14-->E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:8:22-64
 15    <uses-permission android:name="android.permission.CAMERA" />
-15-->[:ocr_ui] C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-65
-15-->[:ocr_ui] C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-62
+15-->[:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-65
+15-->[:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-62
 16
 17    <uses-feature android:name="android.hardware.camera2.full" />
-17-->[:ocr_ui] C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-66
-17-->[:ocr_ui] C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:19-63
+17-->[:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-66
+17-->[:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:19-63
 18    <uses-feature android:name="android.hardware.camera" />
-18-->[:ocr_ui] C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:5-60
-18-->[:ocr_ui] C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:19-57
+18-->[:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:5-60
+18-->[:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:19-57
 19    <uses-feature android:name="android.hardware.camera.autofocus" />
-19-->[:ocr_ui] C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:5-70
-19-->[:ocr_ui] C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:19-67
+19-->[:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:5-70
+19-->[:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:19-67
 20
 21    <application
-21-->C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\app\src\main\AndroidManifest.xml:9:5-25:19
+21-->E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:9:5-26:19
 22        android:allowBackup="true"
-22-->C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\app\src\main\AndroidManifest.xml:10:13-39
+22-->E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:10:13-39
 23        android:debuggable="true"
 24        android:icon="@mipmap/ic_launcher"
-24-->C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\app\src\main\AndroidManifest.xml:11:13-47
+24-->E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:11:13-47
 25        android:label="@string/app_name"
-25-->C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\app\src\main\AndroidManifest.xml:12:13-45
+25-->E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:12:13-45
 26        android:supportsRtl="true"
-26-->C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\app\src\main\AndroidManifest.xml:13:13-39
+26-->E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:13:13-39
 27        android:testOnly="true"
 28        android:theme="@style/AppTheme"
-28-->C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\app\src\main\AndroidManifest.xml:14:13-44
+28-->E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:14:13-44
 29        android:vmSafeMode="true" >
-29-->[:ocr_ui] C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:9-34
+29-->[:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:9-34
 30        <activity android:name="com.baidu.ocr.demo.MainActivity" >
-30-->C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\app\src\main\AndroidManifest.xml:15:9-21:20
-30-->C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\app\src\main\AndroidManifest.xml:15:19-47
+30-->E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:15:9-21:20
+30-->E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:15:19-47
 31            <intent-filter>
-31-->C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\app\src\main\AndroidManifest.xml:16:13-20:29
+31-->E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:16:13-20:29
 32                <action android:name="android.intent.action.MAIN" />
-32-->C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\app\src\main\AndroidManifest.xml:17:17-68
-32-->C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\app\src\main\AndroidManifest.xml:17:25-66
+32-->E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:17:17-68
+32-->E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:17:25-66
 33
 34                <category android:name="android.intent.category.LAUNCHER" />
-34-->C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\app\src\main\AndroidManifest.xml:19:17-76
-34-->C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\app\src\main\AndroidManifest.xml:19:27-74
+34-->E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:19:17-76
+34-->E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:19:27-74
 35            </intent-filter>
 36        </activity>
 37        <activity
-37-->C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\app\src\main\AndroidManifest.xml:22:9-24:20
+37-->E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:22:9-25:20
 38            android:name="com.baidu.ocr.demo.IDCardActivity"
-38-->C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\app\src\main\AndroidManifest.xml:22:19-49
+38-->E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:22:19-49
 39            android:label="@string/idCardLabel" >
-39-->C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\app\src\main\AndroidManifest.xml:23:13-48
+39-->E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:23:13-48
 40        </activity>
 41        <activity
-41-->[:ocr_ui] C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:9-30:80
+41-->[:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:9-30:80
 42            android:name="com.baidu.ocr.ui.camera.CameraActivity"
-42-->[:ocr_ui] C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-66
+42-->[:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-66
 43            android:configChanges="screenSize|orientation"
-43-->[:ocr_ui] C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:13-59
+43-->[:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:13-59
 44            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" />
-44-->[:ocr_ui] C:\Users\Administrator\Downloads\aip-ocr-android-sdk-1.4.4\OCRDemo\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:13-77
+44-->[:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:13-77
 45    </application>
 46
 47</manifest>

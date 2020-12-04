@@ -1,6 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
@@ -16,7 +22,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
 }
 
 dependencies {
@@ -24,4 +29,8 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.1.1'
     compile files('libs/ocr-sdk.jar')
     compile project(path: ':ocr_ui')
+
+    //Gson
+    implementation 'com.google.code.gson:gson:2.8.6'
+
 }

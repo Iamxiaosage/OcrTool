@@ -26,6 +26,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -167,7 +168,7 @@ public class IDCardActivity extends AppCompatActivity {
         });
     }
 
-    private void recIDCard(String idCardSide, String filePath) {
+    private void recIDCard(final String idCardSide, String filePath) {
         IDCardParams param = new IDCardParams();
         param.setImageFile(new File(filePath));
         // 设置身份证正反面
@@ -181,7 +182,35 @@ public class IDCardActivity extends AppCompatActivity {
             @Override
             public void onResult(IDCardResult result) {
                 if (result != null) {
-                    alertText("", result.toString());
+                    StringBuffer strbuff_IDCard=new StringBuffer();
+                    if (idCardSide.equals(IDCardParams.ID_CARD_SIDE_BACK)){
+                        String issueAuthority = getString(R.string.issueAuthority);
+                        String signDate = getString(R.string.signDate);
+                        String expiryDate = getString(R.string.expiryDate);
+                        strbuff_IDCard.append(issueAuthority+"："+result.getIssueAuthority()+"\n"
+                                +signDate+"："+result.getSignDate()+"\n"
+                                +expiryDate+"："+result.getExpiryDate()+"\n");
+
+                        Log.e("ocr","身份证正面数据："+strbuff_IDCard);
+                        Log.e("ocr","身份证正面数据："+result.getJsonRes());
+
+                    }else {
+                        String key_name = getString(R.string.name);
+                        String key_address = getString(R.string.address);
+                        String key_gender = getString(R.string.gender);
+                        String key_ethnic = getString(R.string.ethnic);
+                        String key_signDate = getString(R.string.idNumber);
+
+
+                        strbuff_IDCard.append(key_name+"："+result.getName()+"\n"
+                                +key_address+"："+result.getAddress()+"\n"
+                                +key_gender+"："+result.getGender()+"\n"
+                                +key_ethnic+"："+result.getEthnic()+"\n"
+                                +key_signDate+"："+result.getSignDate()+"\n");
+
+                    }
+//                    alertText("", result.toString());
+                    alertText("", strbuff_IDCard.toString());
                 }
             }
 
@@ -226,11 +255,13 @@ public class IDCardActivity extends AppCompatActivity {
         this.runOnUiThread(new Runnable() {
             @Override
             public void run() {
-//                EditText editText = new EditText(Id);
+                EditText editText = new EditText(IDCardActivity.this);
                 System.out.println("返回内容：");
+                editText.setText(message);
 
                 alertDialog.setTitle(title)
                         .setMessage(message)
+                        .setView(editText)
                         .setPositiveButton("确定", null)
                         .show();
             }

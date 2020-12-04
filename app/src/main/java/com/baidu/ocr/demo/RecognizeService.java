@@ -4,6 +4,7 @@
 package com.baidu.ocr.demo;
 
 import android.content.Context;
+import android.util.Log;
 
 import com.baidu.ocr.sdk.OCR;
 import com.baidu.ocr.sdk.OnResultListener;
@@ -19,6 +20,7 @@ import com.baidu.ocr.sdk.model.Word;
 import com.baidu.ocr.sdk.model.WordSimple;
 
 import java.io.File;
+import java.util.List;
 
 /**
  * Created by ruanshimin on 2017/4/20.
@@ -43,6 +45,9 @@ public class RecognizeService {
                 StringBuilder sb = new StringBuilder();
                 for (WordSimple wordSimple : result.getWordList()) {
                     Word word = (Word) wordSimple;
+//                    String words = word.getWords();
+//                    List<Word.Char> characterResults = word.getCharacterResults();
+                    Log.e("ocr","文字："+word.getWords());
                     sb.append(word.getWords());
                     sb.append("\n");
                 }
@@ -188,7 +193,8 @@ public class RecognizeService {
                         result.getBankName());
 //                String bankCardNumber = result.getBankCardNumber();
 //                listener.onResult(res,result);
-                listener.onResult(res);
+//                listener.onResult(res);
+                listener.onResult(result.getJsonRes());
             }
 
             @Override
@@ -252,6 +258,10 @@ public class RecognizeService {
         OCR.getInstance(ctx).recognizeBusinessLicense(param, new OnResultListener<OcrResponseResult>() {
             @Override
             public void onResult(OcrResponseResult result) {
+//                result.getJsonRes();
+                String jsonRes = result.getJsonRes();
+//                result.get
+                Log.e("ocr","营业执照2："+result.toString());
                 listener.onResult(result.getJsonRes());
             }
 

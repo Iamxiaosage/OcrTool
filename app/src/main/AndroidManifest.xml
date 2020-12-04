@@ -21,6 +21,7 @@
         </activity>
         <activity android:name=".IDCardActivity"
             android:label="@string/idCardLabel">
+
         </activity>
     </application>
 

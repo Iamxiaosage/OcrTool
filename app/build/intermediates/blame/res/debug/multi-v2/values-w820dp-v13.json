@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Administrator\\Downloads\\aip-ocr-android-sdk-1.4.4\\OCRDemo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
+            "outputFile": "E:\\Develop\\OcrTool\\OcrTool\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\Downloads\\aip-ocr-android-sdk-1.4.4\\OCRDemo\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "source": "E:\\Develop\\OcrTool\\OcrTool\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "4",
