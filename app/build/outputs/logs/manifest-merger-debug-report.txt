@@ -81,10 +81,10 @@ MERGED from [com.android.support:support-compat:25.1.1] C:\Users\Administrator\.
 		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:10:13-39
 	android:theme
 		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:14:13-44
-activity#com.baidu.ocr.demo.MainActivity
+activity#com.baidu.ocr.demo.ui.activity.MainActivity
 ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:15:9-21:20
 	android:name
-		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:15:19-47
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:15:19-59
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
@@ -95,12 +95,12 @@ category#android.intent.category.LAUNCHER
 ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:19:17-76
 	android:name
 		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:19:27-74
-activity#com.baidu.ocr.demo.IDCardActivity
+activity#com.baidu.ocr.demo.ui.activity.IDCardActivity
 ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:22:9-25:20
 	android:label
 		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:23:13-48
 	android:name
-		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:22:19-49
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:22:19-61
 uses-sdk
 INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml

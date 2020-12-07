@@ -1,4 +1,4 @@
-#Fri Dec 04 10:29:11 CST 2020
+#Mon Dec 07 15:46:27 CST 2020
 base.0=E\:\\Develop\\OcrTool\\OcrTool\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

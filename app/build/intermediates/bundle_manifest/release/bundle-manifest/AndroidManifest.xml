@@ -25,7 +25,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:vmSafeMode="true" >
-        <activity android:name="com.baidu.ocr.demo.MainActivity" >
+        <activity android:name="com.baidu.ocr.demo.ui.activity.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,7 +33,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.baidu.ocr.demo.IDCardActivity"
+            android:name="com.baidu.ocr.demo.ui.activity.IDCardActivity"
             android:label="@string/idCardLabel" >
         </activity>
         <activity

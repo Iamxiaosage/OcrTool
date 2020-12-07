@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-27:12
-INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-27:12
-INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-27:12
-INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-27:12
+ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-28:12
+INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-28:12
+INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-28:12
+INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-28:12
 MERGED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:3:1-33:12
 MERGED from [com.android.support:appcompat-v7:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\bd0e88e326c5a9372c6c1e387ad66353\appcompat-v7-25.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:animated-vector-drawable:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a1116a66021a53fc786c55799622af63\animated-vector-drawable-25.1.1\AndroidManifest.xml:17:1-24:12
@@ -14,20 +14,20 @@ MERGED from [com.android.support:support-media-compat:25.1.1] C:\Users\Administr
 MERGED from [com.android.support:support-core-utils:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\b6475c4cb9f5c8ddab9041cc4d623ae4\support-core-utils-25.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:support-core-ui:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\27dc1d5062a9ae6a0a076eb38076af5e\support-core-ui-25.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:support-compat:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\17eab97e8b5fed646ae0a0f542096676\support-compat-25.1.1\AndroidManifest.xml:17:1-27:12
-INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-27:12
-INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-27:12
-INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-27:12
+INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-28:12
+INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-28:12
+INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-28:12
 	package
 		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:4:11-39
 		INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml
 		INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml
-		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-27:12
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-28:12
 		INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml
-		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-27:12
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:1-28:12
 		INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:3:11-69
@@ -48,7 +48,7 @@ ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:8:5-66
 	android:name
 		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:8:22-64
 application
-ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:9:5-25:19
+ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:9:5-26:19
 MERGED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:20:5-31:19
 MERGED from [:ocr_ui] E:\Develop\OcrTool\OcrTool\ocr_ui\build\intermediates\library_manifest\release\AndroidManifest.xml:20:5-31:19
 MERGED from [com.android.support:appcompat-v7:25.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\bd0e88e326c5a9372c6c1e387ad66353\appcompat-v7-25.1.1\AndroidManifest.xml:25:5-20
@@ -81,10 +81,10 @@ MERGED from [com.android.support:support-compat:25.1.1] C:\Users\Administrator\.
 		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:10:13-39
 	android:theme
 		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:14:13-44
-activity#com.baidu.ocr.demo.MainActivity
+activity#com.baidu.ocr.demo.ui.activity.MainActivity
 ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:15:9-21:20
 	android:name
-		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:15:19-47
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:15:19-59
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
@@ -95,12 +95,12 @@ category#android.intent.category.LAUNCHER
 ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:19:17-76
 	android:name
 		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:19:27-74
-activity#com.baidu.ocr.demo.IDCardActivity
-ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:22:9-24:20
+activity#com.baidu.ocr.demo.ui.activity.IDCardActivity
+ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:22:9-25:20
 	android:label
 		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:23:13-48
 	android:name
-		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:22:19-49
+		ADDED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml:22:19-61
 uses-sdk
 INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\Develop\OcrTool\OcrTool\app\src\main\AndroidManifest.xml

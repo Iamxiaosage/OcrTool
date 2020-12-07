@@ -37,5 +37,11 @@
     <string name="gender">性别</string>
     <string name="ethnic">民族</string>
 
+<!--    驾驶证-->
+    <string name="effectStartDate">有效起始日期</string>
+    <string name="birthday">出生日期</string>
+    <string name="certificateNumber">证号</string>
+    <string name="address_DrivierLicense">住址</string>
+
 
 </resources>

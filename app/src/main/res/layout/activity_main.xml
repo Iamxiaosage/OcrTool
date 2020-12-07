@@ -108,6 +108,18 @@
         android:id="@+id/accurate_button"
         tools:ignore="HardcodedText"/>
 
+
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vat_invoice_button"
+        android:text="增值税发票识别"
+        tools:ignore="HardcodedText"/>
+
+<!--    useless-->
+
     <Button
         android:visibility="gone"
 
@@ -118,18 +130,6 @@
         tools:ignore="HardcodedText"/>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/vat_invoice_button"
-        android:text="增值税发票识别"
-        tools:ignore="HardcodedText"/>
-
-<!--    useless-->
-
-
-
-    <Button
-        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/driving_license_button"
@@ -147,7 +147,6 @@
 
     <Button
         android:visibility="gone"
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/license_plate_button"
@@ -158,7 +157,6 @@
 
     <Button
         android:visibility="gone"
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/receipt_button"
@@ -166,10 +164,19 @@
         tools:ignore="HardcodedText"/>
     <LinearLayout
 
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone"
         android:orientation="vertical">
+
+        <Button
+            android:visibility="visible"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/custom_button"
+            android:text="自定义模板识别"
+            tools:ignore="HardcodedText"/>
         <Button android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/passport_button"
@@ -209,14 +216,7 @@
             android:text="彩票识别"
             tools:ignore="HardcodedText"/>
 
-        <Button
-            android:visibility="gone"
 
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/custom_button"
-            android:text="自定义模板识别"
-            tools:ignore="HardcodedText"/>
     </LinearLayout>
 
 
