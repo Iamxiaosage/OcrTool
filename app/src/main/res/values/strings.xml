@@ -1,6 +1,84 @@
 <resources>
-    <string name="app_name">OCR_SDK</string>
+
+
+<!--    xiaomi，OPPO，hauwei-->
+    <string name="app_name">JPG转换</string>
+
+    <!--    vivo-->
+<!--        <string name="app_name">小果文字识别</string>-->
+
+
+
+
+<!--    xiiaomi，oppo，vivo-->
+    <string name="company_name">深圳聚果科技有限公司</string>
+
+<!--    huawei-->
+<!--    <string name="company_name">深圳微视天利科技有限公司</string>-->
+
+
+
+    <string name="erro">服务器异常，请稍后再试！</string>
+    <string name="w_res">没有搜索到该资源！</string>
+    <string name="login_failure">登录失败，请重新登录！</string>
+
+
     <string name="idCardLabel">身份证识别</string>
     <string name="bankCardLabel">银行卡识别</string>
     <string name="generalLabel">通用文字识别</string>
+
+
+    <!--    银行卡-->
+    <string name="bank_card_num">银行卡号</string>
+    <string name="bank_name">银行名</string>
+    <string name="bank_card_type">银行卡类型</string>
+
+
+    <!--    营业执照-->
+    <string name="log_id">日志编号</string>
+    <string name="socal_credit_code">社会信用代码</string>
+    <string name="composeForm">组成形式</string>
+    <string name="manageScope">经营范围</string>
+    <string name="establishDate">成立日期</string>
+    <string name="legalPerson">法人</string>
+    <string name="registerCapital">注册资本</string>
+    <string name="licenseNum">证件编号</string>
+    <string name="address">地址</string>
+    <string name="companyName">单位名称</string>
+    <string name="validityDate">有效期</string>
+    <string name="type">类型</string>
+
+
+    <!--    身份证-->
+    <string name="issueAuthority">签发机关</string>
+    <string name="signDate">签署日期</string>
+    <string name="expiryDate">到期日</string>
+
+
+    <string name="idNumber">身份证号码</string>
+    <string name="name">姓名</string>
+    <string name="gender">性别</string>
+    <string name="ethnic">民族</string>
+
+    <!--    驾驶证-->
+    <string name="effectStartDate">有效起始日期</string>
+    <string name="birthday">出生日期</string>
+    <string name="certificateNumber">证号</string>
+    <string name="address_DrivierLicense">住址</string>
+    <string name="welcome">欢迎进入</string>
+
+
+<!--    行驶证-->
+    <string name="vehicle_recognize_code">车辆识别代号</string>
+    <string name="address_vehicle">住址</string>
+    <string name="Date_Of_Issue">发证日期</string>
+    <string name="brand_model">品牌型号</string>
+    <string name="Vehicle_type">车辆类型</string>
+    <string name="owner">所有人</string>
+    <string name="Nature_of_use">使用性质</string>
+    <string name="Engine_number">发动机号码</string>
+    <string name="Plate_number">号牌号码</string>
+    <string name="Date_of_registration">注册日期</string>
+
+
 </resources>

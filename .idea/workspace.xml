@@ -5,15 +5,7 @@
       <filter>
         <option name="logLevel" value="verbose" />
         <option name="logMessagePattern" value="" />
-        <option name="logTagPattern" value="System.out." />
-        <option name="name" value="syso" />
-        <option name="packageNamePattern" value="" />
-        <option name="pid" value="" />
-      </filter>
-      <filter>
-        <option name="logLevel" value="verbose" />
-        <option name="logMessagePattern" value="" />
-        <option name="logTagPattern" value="ocr" />
+        <option name="logTagPattern" value="" />
         <option name="name" value="ocr" />
         <option name="packageNamePattern" value="" />
         <option name="pid" value="" />
@@ -22,15 +14,26 @@
   </component>
   <component name="AndroidLayouts">
     <shared>
-      <config />
+      <config>
+        <device id="pixel" />
+        <device id="wear_square" />
+        <device id="tv_1080p" />
+        <device id="pixel_3" />
+      </config>
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="ocr" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e230953c-0008-4ef9-b79d-e13df0f1ec87" name="Default Changelist" comment="" />
+    <list default="true" id="26424255-5189-4056-9d4c-b30c794756d4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/PrivacyPolicy.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/PrivacyPolicy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/PrivacyProtocol2.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/PrivacyProtocol2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/WebUrlActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/WebUrlActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +48,31 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jgAndroidApp" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jgAndroidApp" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jgAndroidApp" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -53,25 +80,73 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="layoutResourceFile" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/officeFamilyMeals" />
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="E:\jks\ocr.jks" />
+    <option name="KEY_ALIAS" value="key0" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
   </component>
-  <component name="ProjectId" id="1l609yDzm5efCV4zDnHwhOQM3gO" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="ProjectId" id="1lJvK4tSb9zeNNA0tHBJpBJIAND" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ApkExportedModule" value="app" />
+    <property name="DEBUGGABLE_DEVICE" value="xiaomi-mix_2-41f138c7" />
+    <property name="DEBUGGABLE_PROCESS" value="com.juguo.ocr" />
+    <property name="DEBUGGER_ID" value="Auto" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="127.0.0.1:62001" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-12-16T10:54:25.753Z" />
+    <property name="ExportApk.ApkPath" value="C:\Users\Administrator\Desktop\APK" />
+    <property name="ExportApk.BuildVariants" value="oppoRelease" />
+    <property name="ExportApk.SignV1" value="true" />
+    <property name="ExportApk.SignV2" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
-  <component name="RunManager" selected="Android App.MainActivity">
+  <component name="PsdUISettings">
+    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.-2042281460">
+      <recent name="com.juguo.ocr.ui.activity" />
+      <recent name="com.baidu.ocr.ui.camera" />
+      <recent name="com.juguo.gushici.ui.activity" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Develop\ToolProject\ToolApp\app\src\main\assets" />
+      <recent name="E:\Develop\ToolProject\abc\jgAndroidApp\app\src\main\assets" />
+      <recent name="E:\Develop\ToolProject\abc\jgAndroidApp\app\src\main\res\mipmap-xxxhdpi" />
+      <recent name="E:\Develop\ToolProject\abc\jgAndroidApp\app\src\main\java\com\juguo\ocr\view" />
+      <recent name="E:\Develop\ToolProject\abc\jgAndroidApp\app\src\main\res\layout" />
+    </key>
+  </component>
+  <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -79,7 +154,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainActivity" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false" temporary="true">
+    <configuration name="SplashActivity" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false" temporary="true">
       <module name="app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -93,7 +168,7 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="DEBUGGER_TYPE" value="Auto" />
@@ -125,65 +200,14 @@
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="com.baidu.ocr.demo.MainActivity" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="app" />
-      <option name="DEPLOY" value="true" />
-      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
-      <option name="DEPLOY_AS_INSTANT" value="false" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="DEBUGGER_TYPE" value="Auto" />
-      <Auto>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Auto>
-      <Hybrid>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Hybrid>
-      <Java />
-      <Native>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Native>
-      <Profilers>
-        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
+      <option name="ACTIVITY_CLASS" value="com.juguo.ocr.ui.activity.SplashActivity" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Android App.MainActivity" />
+        <item itemvalue="Android App.SplashActivity" />
       </list>
     </recent_temporary>
   </component>
@@ -192,104 +216,402 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e230953c-0008-4ef9-b79d-e13df0f1ec87" name="Default Changelist" comment="" />
-      <created>1606902085830</created>
+      <changelist id="26424255-5189-4056-9d4c-b30c794756d4" name="Default Changelist" comment="" />
+      <created>1607327941559</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1606902085830</updated>
+      <updated>1607327941559</updated>
     </task>
+    <task id="LOCAL-00001" summary="11">
+      <created>1607328051471</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607328051471</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="11" />
+    <option name="LAST_COMMIT_MESSAGE" value="11" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="441" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606965375322">
+    <state x="682" y="165" key="#MainActivity_(1)" timestamp="1607333391394">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="441" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606965375322" />
-    <state width="1876" height="131" key="GridCell.Tab.0.bottom" timestamp="1606965379114">
+    <state x="682" y="165" key="#MainActivity_(1)/0.0.1920.1040@0.0.1920.1040" timestamp="1607333391394" />
+    <state x="805" y="244" key="#PSD" timestamp="1608167224313">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="131" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606965379114" />
-    <state width="1876" height="131" key="GridCell.Tab.0.center" timestamp="1606965379114">
+    <state x="805" y="244" key="#PSD/0.0.1920.1040@0.0.1920.1040" timestamp="1608167224313" />
+    <state x="682" y="158" key="#SplashActivity" timestamp="1608001323936">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="131" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606965379114" />
-    <state width="1876" height="131" key="GridCell.Tab.0.left" timestamp="1606965379114">
+    <state x="682" y="158" key="#SplashActivity/0.0.1920.1040@0.0.1920.1040" timestamp="1608001323936" />
+    <state x="682" y="165" key="#app" timestamp="1607673416536">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="131" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606965379114" />
-    <state width="1876" height="131" key="GridCell.Tab.0.right" timestamp="1606965379114">
+    <state x="682" y="165" key="#app/0.0.1920.1040@0.0.1920.1040" timestamp="1607673416536" />
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608097624953">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="131" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606965379114" />
-    <state width="1876" height="342" key="GridCell.Tab.1.bottom" timestamp="1606964951149">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608097624953" />
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1607492019003">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="342" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606964951149" />
-    <state width="1876" height="342" key="GridCell.Tab.1.center" timestamp="1606964951144">
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607492019003" />
+    <state x="526" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1607513906735">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="342" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606964951144" />
-    <state width="1876" height="342" key="GridCell.Tab.1.left" timestamp="1606964951142">
+    <state x="526" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607513906735" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607572408282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="342" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606964951142" />
-    <state width="1876" height="342" key="GridCell.Tab.1.right" timestamp="1606964951148">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607572408282" />
+    <state x="540" y="274" key="AndroidCreateResourceDirectoryDialog" timestamp="1608018968630">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="342" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606964951148" />
-    <state x="382" y="63" key="SettingsEditor" timestamp="1606956980906">
+    <state x="540" y="274" key="AndroidCreateResourceDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608018968630" />
+    <state x="540" y="274" key="AndroidCreateResourceFileDialog" timestamp="1607513362838">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="382" y="63" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606956980906" />
-    <state x="984" y="448" key="edit.logcat.filter.dialog.dimensions" timestamp="1606964784776">
+    <state x="540" y="274" key="AndroidCreateResourceFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607513362838" />
+    <state x="856" y="368" key="AndroidCreateXmlResourceDialog" timestamp="1607939114692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="984" y="448" key="edit.logcat.filter.dialog.dimensions/0.0.1920.1040@0.0.1920.1040" timestamp="1606964784776" />
-    <state x="949" y="195" width="787" height="774" key="find.popup" timestamp="1606959782745">
+    <state x="856" y="368" key="AndroidCreateXmlResourceDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607939114692" />
+    <state x="811" y="285" key="AndroidProcessChooserDialog" timestamp="1607569652142">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="949" y="195" width="787" height="774" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606959782745" />
-    <state x="702" y="150" key="refactoring.ChangeSignatureDialog" timestamp="1606965959862">
+    <state x="811" y="285" key="AndroidProcessChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607569652142" />
+    <state x="577" y="113" key="CommitChangelistDialog2" timestamp="1607328050813">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="702" y="150" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606965959862" />
-    <state x="921" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1606903780261">
+    <state x="577" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1607328050813" />
+    <state x="220" y="261" key="FileChooserDialogImpl" timestamp="1608080543961">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="921" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606903780261" />
+    <state x="220" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608080543961" />
+    <state width="1878" height="401" key="GridCell.Tab.0.bottom" timestamp="1608192742054">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1878" height="401" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608192742054" />
+    <state width="1878" height="401" key="GridCell.Tab.0.center" timestamp="1608192742054">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1878" height="401" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608192742054" />
+    <state width="1878" height="401" key="GridCell.Tab.0.left" timestamp="1608192742053">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1878" height="401" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608192742053" />
+    <state width="1878" height="401" key="GridCell.Tab.0.right" timestamp="1608192742054">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1878" height="401" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608192742054" />
+    <state width="1878" height="326" key="GridCell.Tab.1.bottom" timestamp="1608110628570">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1878" height="326" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608110628570" />
+    <state width="1878" height="326" key="GridCell.Tab.1.center" timestamp="1608110628566">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1878" height="326" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608110628566" />
+    <state width="1878" height="326" key="GridCell.Tab.1.left" timestamp="1608110628565">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1878" height="326" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608110628565" />
+    <state width="1878" height="326" key="GridCell.Tab.1.right" timestamp="1608110628568">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1878" height="326" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608110628568" />
+    <state x="265" y="0" key="ScreenshotViewer.Dimensions" timestamp="1607998439099">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="265" y="0" key="ScreenshotViewer.Dimensions/0.0.1920.1040@0.0.1920.1040" timestamp="1607998439099" />
+    <state x="246" y="216" width="1344" height="738" key="SettingsEditor" timestamp="1608112070927">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="246" y="216" width="1344" height="738" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608112070927" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1607328057619">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607328057619" />
+    <state x="92" y="92" width="1736" height="856" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1607562569930">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607562569930" />
+    <state x="-118" y="243" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1608001448103">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-118" y="243" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608001448103" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1608115857519">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608115857519" />
+    <state x="0" y="0" width="732" height="1040" maximized="true" key="dock-window-1" timestamp="1607513920148">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="0" width="732" height="1040" maximized="true" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1607513920148" />
+    <state x="731" y="363" key="edit.logcat.filter.dialog.dimensions" timestamp="1607394940850">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="731" y="363" key="edit.logcat.filter.dialog.dimensions/0.0.1920.1040@0.0.1920.1040" timestamp="1607394940850" />
+    <state x="690" y="276" key="extract.method.dialog" timestamp="1608108479123">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="276" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608108479123" />
+    <state x="627" y="462" width="888" height="578" key="find.popup" timestamp="1608107593815">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="627" y="462" width="888" height="578" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608107593815" />
+    <state x="136" y="235" key="run.anything.popup" timestamp="1607425651796">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="136" y="235" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607425651796" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608169184256">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608169184256" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/baidu/ocr/demo/IDCardActivity.java</url>
-          <line>231</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/fragment/HomeFragment.java</url>
+          <line>563</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/baidu/ocr/demo/IDCardActivity.java</url>
-          <line>232</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/baidu/ocr/demo/IDCardActivity.java</url>
-          <line>233</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/fragment/HomeFragment.java</url>
+          <line>560</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/baidu/ocr/demo/MainActivity.java</url>
-          <line>473</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/fragment/HomeFragment.java</url>
+          <line>561</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/baidu/ocr/demo/MainActivity.java</url>
-          <line>571</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/fragment/HomeFragment.java</url>
+          <line>558</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/baidu/ocr/demo/MainActivity.java</url>
-          <line>573</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/fragment/HomeFragment.java</url>
+          <line>571</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/ContentActivity.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/ContentActivity.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/ContentActivity.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/ContentActivity.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/ContentActivity.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/ContentActivity.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/ContentActivity.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/view/NormalAdapter.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/view/NormalAdapter.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/fragment/ScanFragment.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/view/NormalAdapter.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/view/NormalAdapter.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/view/NormalAdapter.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/view/NormalAdapter.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/view/NormalAdapter.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/view/NormalAdapter.java</url>
+          <line>110</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/SplashActivity.java</url>
+          <line>201</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/SplashActivity.java</url>
+          <line>209</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/SplashActivity.java</url>
+          <line>180</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/SplashActivity.java</url>
+          <line>162</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/SplashActivity.java</url>
+          <line>155</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/SplashActivity.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/SplashActivity.java</url>
+          <line>311</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/SplashActivity.java</url>
+          <line>308</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/SplashActivity.java</url>
+          <line>305</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/SplashActivity.java</url>
+          <line>302</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/SplashActivity.java</url>
+          <line>297</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/base/BaseActivity.java</url>
+          <line>231</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/SplashActivity.java</url>
+          <line>260</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/SplashActivity.java</url>
+          <line>261</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/SplashActivity.java</url>
+          <line>262</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/SplashActivity.java</url>
+          <line>264</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/MainActivity.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/MainActivity.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/base/BaseActivity.java</url>
+          <line>227</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/base/BaseActivity.java</url>
+          <line>229</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/base/BaseActivity.java</url>
+          <line>218</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/base/BaseActivity.java</url>
+          <line>222</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/base/BaseActivity.java</url>
+          <line>226</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/fragment/HomeFragment.java</url>
+          <line>316</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/fragment/HomeFragment.java</url>
+          <line>317</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-method">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/fragment/HomeFragment.java</url>
+          <line>311</line>
+          <properties class="com.juguo.ocr.ui.fragment.HomeFragment" method="alertText" />
+          <option name="timeStamp" value="78" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

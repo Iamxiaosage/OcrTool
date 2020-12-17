@@ -1,5 +1,3 @@
-/*
- * Copyright (C) 2017 Baidu, Inc. All Rights Reserved.
- */
-include ':app', ':ocr_ui';
-
+include ':ocr_ui'
+include ':app'
+rootProject.name = "GuShiCi"
