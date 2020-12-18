@@ -111,7 +111,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/rl_gwhp"
+                    android:id="@+id/rl_give_me_a_good_comment"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="33dp"

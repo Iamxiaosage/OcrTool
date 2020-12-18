@@ -55,8 +55,6 @@ public class BaseActivity extends SupportActivity implements LifecycleOwner, Vie
     private BaseActivity mContext;
     public AlertDialog alertDialog;
     private ImmersionBar mImmersionBar;//状态栏沉浸
-    private SharedPreferences sharedPreferences;
-    private SharedPreferences.Editor editor;
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,10 +77,9 @@ public class BaseActivity extends SupportActivity implements LifecycleOwner, Vie
     }
 
 
-    public void checkPermission()
-    {
+    public void checkPermission() {
         int targetSdkVersion = 0;
-        String[] PermissionString={Manifest.permission.READ_PHONE_STATE,Manifest.permission.WRITE_EXTERNAL_STORAGE,
+        String[] PermissionString = {Manifest.permission.READ_PHONE_STATE, Manifest.permission.WRITE_EXTERNAL_STORAGE,
                 Manifest.permission.CAMERA};
         try {
             final PackageInfo info = this.getPackageManager().getPackageInfo(this.getPackageName(), 0);
@@ -138,7 +135,7 @@ public class BaseActivity extends SupportActivity implements LifecycleOwner, Vie
             }
             if (isAllGranted) {
                 // 所有的权限都授予了
-                Log.e("err","权限都授权了");
+                Log.e("err", "权限都授权了");
             } else {
                 // 弹出对话框告诉用户需要权限的原因, 并引导用户去应用权限管理中手动打开权限按钮
                 //容易判断错
@@ -146,7 +143,6 @@ public class BaseActivity extends SupportActivity implements LifecycleOwner, Vie
             }
         }
     }
-
 
 
     @Subscribe(threadMode = ThreadMode.MAIN)
@@ -214,113 +210,115 @@ public class BaseActivity extends SupportActivity implements LifecycleOwner, Vie
     }
 
     //等待上传的加载框
-    public void dialogShow_Choose() {
-        //私有数据
-        sharedPreferences = getSharedPreferences("isagree", Context.MODE_PRIVATE);
-
-
-        //获取编辑器
-        editor = sharedPreferences.edit();
-
-        boolean isagree = sharedPreferences.getBoolean("isagree", false);
-
-        if (!isagree) {
-            showPrivacyDialog();
-
-        }
+    public void dialogShow_Protocol() {
+//        SharedPreferences sharedPreferences;
+//        SharedPreferences.Editor editor;
+//
+//        //私有数据
+//        sharedPreferences = getSharedPreferences("isagree", Context.MODE_PRIVATE);
+//
+//
+//        //获取编辑器
+//        editor = sharedPreferences.edit();
+//
+//        boolean isagree = sharedPreferences.getBoolean("isagree", false);
+//
+//        if (!isagree) {
+//
+//        }
+        showPrivacyDialog();
 
 
     }
 
     private void showPrivacyDialog() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
-        final Dialog dialog;
-        builder.setCancelable(false);//点击屏幕和返回键对话框不消失
-        LinearLayout relativeLayout = (LinearLayout) getLayoutInflater().inflate(R.layout.dialog_agree, null);
-        builder.setView(relativeLayout);
-        builder.setCancelable(false);
-        Button bt_cancel = (Button) relativeLayout.findViewById(R.id.bt_cancle);
-        Button bt_sure = (Button) relativeLayout.findViewById(R.id.bt_sure);
-        TextView tv_message = (TextView) relativeLayout.findViewById(R.id.tv_message);
+        SharedPreferences sharedPreferences;
+        SharedPreferences.Editor editor;
+
+        sharedPreferences = getSharedPreferences("isagree", Context.MODE_PRIVATE);
+        editor = sharedPreferences.edit();
+
+        boolean isagree = sharedPreferences.getBoolean("isagree", false);
+
+        if (!isagree) {
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
+            builder.setCancelable(false);//点击屏幕和返回键对话框不消失
+            final Dialog dialog;
+            LinearLayout relativeLayout = (LinearLayout) getLayoutInflater().inflate(R.layout.dialog_agree, null);
+            builder.setView(relativeLayout);
+            builder.setCancelable(false);
+            Button bt_cancel = (Button) relativeLayout.findViewById(R.id.bt_cancle);
+            Button bt_sure = (Button) relativeLayout.findViewById(R.id.bt_sure);
+            TextView tv_message = (TextView) relativeLayout.findViewById(R.id.tv_message);
+
+            String userProtocol = "《用户协议》";
+            String privacyProtocol = "《隐私协议》";
+
+            String message = "感谢您信任并使用" + getString(R.string.app_name) + "的产品和服务。在您使用JPG转换App前，请认真阅读并了解我们的";
+            String messageAll = "感谢您信任并使用" + getString(R.string.app_name) + "的产品和服务。在您使用JPG转换App前，请认真阅读并了解我们的" + userProtocol + "和" + privacyProtocol;
+
+            int start_User = message.length();
+            int end_User = start_User + userProtocol.length() - 1;
+
+            int start_Privacy = end_User + 3;
+            int end_Privacy = start_Privacy + privacyProtocol.length() - 1;
+
+            final SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder();
+
+            spannableStringBuilder.append(messageAll);
+            ClickableSpan userLicenseClickableSpan = new ClickableSpan() {
+                @Override
+                public void onClick(View widget) {
+
+                    Intent userProtocolIntent = new Intent(mContext, WebUrlActivity.class);
+
+                    userProtocolIntent.putExtra("url", "file:///android_asset/UserProtocol.html");
+                    userProtocolIntent.putExtra("title", "用户使用协议");
+                    startActivity(userProtocolIntent);
+                }
+            };
+
+            ClickableSpan privacyClickableSpan = new ClickableSpan() {
+                @Override
+                public void onClick(View widget) {
+                    Intent privacyIntent = new Intent(mContext, WebUrlActivity.class);
+
+                    privacyIntent.putExtra("url", "file:///android_asset/PrivacyProtocol2.html");
+                    privacyIntent.putExtra("title", "用户隐私协议");
+                    startActivity(privacyIntent);
+                }
+            };
+
+            spannableStringBuilder.setSpan(userLicenseClickableSpan, start_User, end_User, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+            spannableStringBuilder.setSpan(privacyClickableSpan, start_Privacy, end_Privacy, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+            tv_message.setMovementMethod(LinkMovementMethod.getInstance());
+            tv_message.setText(spannableStringBuilder);
 
 
-        //设置文字
-//        String userLicenseAgreement = "《" + getString(R.string.app_name) + "App用户使用协议》";
-//        String privacyAgreement = "《" + getString(R.string.app_name) + "App用户隐私协议》";
+            /********************************************************/
 
-        String userProtocol = "《用户协议》";
-        String privacyProtocol = "《隐私协议》";
+            dialog = builder.show();
 
-        String message = "感谢您信任并使用JPG转换的产品和服务。在您使用JPG转换App前，请认真阅读并了解我们的";
-        String messageAll = "感谢您信任并使用JPG转换的产品和服务。在您使用JPG转换App前，请认真阅读并了解我们的" + userProtocol + "和" + privacyProtocol;
-
-        int start_User = message.length();
-        int end_User = start_User + userProtocol.length() - 1;
-
-        int start_Privacy = end_User + 3;
-        int end_Privacy = start_Privacy + privacyProtocol.length() - 1;
-
-        final SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder();
-
-        spannableStringBuilder.append(messageAll);
-        ClickableSpan userLicenseClickableSpan = new ClickableSpan() {
-            @Override
-            public void onClick(View widget) {
-
-                Intent userProtocolIntent = new Intent(mContext, WebUrlActivity.class);
-
-                userProtocolIntent.putExtra("url", "file:///android_asset/UserProtocol.html");
-                userProtocolIntent.putExtra("title", "用户使用协议");
-                startActivity(userProtocolIntent);
-            }
-        };
-
-        ClickableSpan privacyClickableSpan = new ClickableSpan() {
-            @Override
-            public void onClick(View widget) {
-                Intent privacyIntent = new Intent(mContext, WebUrlActivity.class);
-//                privacyIntent.putExtra("url", "file:///android_asset/PrivacyPolicy.html");//华为/
-                privacyIntent.putExtra("url", "file:///android_asset/PrivacyProtocol2.html");
-                privacyIntent.putExtra("title", "用户隐私协议");
-                startActivity(privacyIntent);
-
-            }
-        };
-
-
-        spannableStringBuilder.setSpan(userLicenseClickableSpan, start_User, end_User, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        spannableStringBuilder.setSpan(privacyClickableSpan, start_Privacy, end_Privacy, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-
-
-        tv_message.setMovementMethod(LinkMovementMethod.getInstance());
-        tv_message.setText(spannableStringBuilder);
-
-
-        /********************************************************/
-
-
-        dialog = builder.show();
-
-        bt_cancel.setOnClickListener(v -> {
-            show_Toast("拜拜啦~");
-            dialog.dismiss();
-
-            mContext.finish();
-        });
-
-
-        bt_sure.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                editor.putBoolean("isagree", true);
-
-                editor.commit();//提交修改
-
+            bt_cancel.setOnClickListener(v -> {
+                show_Toast("拜拜啦~");
                 dialog.dismiss();
 
-            }
-        });
+                mContext.finish();
+            });
+
+            bt_sure.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    editor.putBoolean("isagree", true);
+                    editor.commit();//提交修改
+                    dialog.dismiss();
+                }
+            });
+        }
     }
+
 
     public void dialogDismiss() {
         if (alertDialog != null) alertDialog.dismiss();

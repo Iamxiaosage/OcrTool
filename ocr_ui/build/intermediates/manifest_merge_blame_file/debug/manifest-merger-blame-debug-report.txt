@@ -14,31 +14,31 @@
 14    <!-- </application> -->
 15    <uses-sdk
 16        android:minSdkVersion="14"
-16-->E:\Develop\ToolProject\ToolApp\ocr_ui\src\main\AndroidManifest.xml
+16-->E:\Develop\ToolProject\OcrTool\ocr_ui\src\main\AndroidManifest.xml
 17        android:targetSdkVersion="25" />
-17-->E:\Develop\ToolProject\ToolApp\ocr_ui\src\main\AndroidManifest.xml
+17-->E:\Develop\ToolProject\OcrTool\ocr_ui\src\main\AndroidManifest.xml
 18
 19    <uses-permission android:name="android.permission.CAMERA" />
-19-->E:\Develop\ToolProject\ToolApp\ocr_ui\src\main\AndroidManifest.xml:7:5-64
-19-->E:\Develop\ToolProject\ToolApp\ocr_ui\src\main\AndroidManifest.xml:7:22-62
+19-->E:\Develop\ToolProject\OcrTool\ocr_ui\src\main\AndroidManifest.xml:7:5-64
+19-->E:\Develop\ToolProject\OcrTool\ocr_ui\src\main\AndroidManifest.xml:7:22-62
 20    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-20-->E:\Develop\ToolProject\ToolApp\ocr_ui\src\main\AndroidManifest.xml:8:5-79
-20-->E:\Develop\ToolProject\ToolApp\ocr_ui\src\main\AndroidManifest.xml:8:22-77
+20-->E:\Develop\ToolProject\OcrTool\ocr_ui\src\main\AndroidManifest.xml:8:5-79
+20-->E:\Develop\ToolProject\OcrTool\ocr_ui\src\main\AndroidManifest.xml:8:22-77
 21    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-21-->E:\Develop\ToolProject\ToolApp\ocr_ui\src\main\AndroidManifest.xml:9:5-80
-21-->E:\Develop\ToolProject\ToolApp\ocr_ui\src\main\AndroidManifest.xml:9:22-78
+21-->E:\Develop\ToolProject\OcrTool\ocr_ui\src\main\AndroidManifest.xml:9:5-80
+21-->E:\Develop\ToolProject\OcrTool\ocr_ui\src\main\AndroidManifest.xml:9:22-78
 22
 23    <uses-feature android:name="android.hardware.camera2.full" />
-23-->E:\Develop\ToolProject\ToolApp\ocr_ui\src\main\AndroidManifest.xml:10:5-65
-23-->E:\Develop\ToolProject\ToolApp\ocr_ui\src\main\AndroidManifest.xml:10:19-63
+23-->E:\Develop\ToolProject\OcrTool\ocr_ui\src\main\AndroidManifest.xml:10:5-65
+23-->E:\Develop\ToolProject\OcrTool\ocr_ui\src\main\AndroidManifest.xml:10:19-63
 24    <uses-feature android:name="android.hardware.camera" />
-24-->E:\Develop\ToolProject\ToolApp\ocr_ui\src\main\AndroidManifest.xml:11:5-59
-24-->E:\Develop\ToolProject\ToolApp\ocr_ui\src\main\AndroidManifest.xml:11:19-57
+24-->E:\Develop\ToolProject\OcrTool\ocr_ui\src\main\AndroidManifest.xml:11:5-59
+24-->E:\Develop\ToolProject\OcrTool\ocr_ui\src\main\AndroidManifest.xml:11:19-57
 25    <uses-feature android:name="android.hardware.camera.autofocus" />
-25-->E:\Develop\ToolProject\ToolApp\ocr_ui\src\main\AndroidManifest.xml:12:5-70
-25-->E:\Develop\ToolProject\ToolApp\ocr_ui\src\main\AndroidManifest.xml:12:19-67
+25-->E:\Develop\ToolProject\OcrTool\ocr_ui\src\main\AndroidManifest.xml:12:5-70
+25-->E:\Develop\ToolProject\OcrTool\ocr_ui\src\main\AndroidManifest.xml:12:19-67
 26    <uses-feature android:name="android.permission.READ_PHONE_STATE" />
-26-->E:\Develop\ToolProject\ToolApp\ocr_ui\src\main\AndroidManifest.xml:13:5-72
-26-->E:\Develop\ToolProject\ToolApp\ocr_ui\src\main\AndroidManifest.xml:13:19-69
+26-->E:\Develop\ToolProject\OcrTool\ocr_ui\src\main\AndroidManifest.xml:13:5-72
+26-->E:\Develop\ToolProject\OcrTool\ocr_ui\src\main\AndroidManifest.xml:13:19-69
 27
 28</manifest>

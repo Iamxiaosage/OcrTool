@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GuShiCi.iml" filepath="$PROJECT_DIR$/.idea/modules/GuShiCi.iml" group="GuShiCi" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="GuShiCi/app" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ocr_ui/ocr_ui.iml" filepath="$PROJECT_DIR$/.idea/modules/ocr_ui/ocr_ui.iml" group="GuShiCi/ocr_ui" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ToolApp.iml" filepath="$PROJECT_DIR$/.idea/modules/ToolApp.iml" group="ToolApp" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="ToolApp/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ocr_ui/ocr_ui.iml" filepath="$PROJECT_DIR$/.idea/modules/ocr_ui/ocr_ui.iml" group="ToolApp/ocr_ui" />
     </modules>
   </component>
 </project>

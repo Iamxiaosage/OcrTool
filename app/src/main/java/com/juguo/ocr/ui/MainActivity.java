@@ -42,7 +42,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         loadMultipleRootFragment(R.id.fl_main_content, 0, mHomeFragment, mCenterFragment, mMineFragment);
         onSelectedHome();
 
-        dialogShow_Choose();
+        dialogShow_Protocol();
 
     }
 

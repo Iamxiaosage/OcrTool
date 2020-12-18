@@ -158,12 +158,12 @@ public class MineFragment extends BaseMvpFragment<MinePresenter> implements Mine
         });
     }
 
-    @OnClick({  R.id.rl_gwhp, R.id.rl_bzfk, R.id.rl_fxhy,
+    @OnClick({  R.id.rl_give_me_a_good_comment, R.id.rl_bzfk, R.id.rl_fxhy,
             R.id.rl_yszc, R.id.rl_gywm, R.id.img_setting, R.id.rl_bbgx,
              R.id.ll_login})
     public void btn_Login_Click(View v) {
         switch (v.getId()) {
-            case R.id.rl_gwhp:
+            case R.id.rl_give_me_a_good_comment:
                 // 给我好评
 //                showDialog();
                 if (installedMarketPkgs != null && installedMarketPkgs.size() > 0) {

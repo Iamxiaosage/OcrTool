@@ -28,11 +28,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26424255-5189-4056-9d4c-b30c794756d4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/PrivacyPolicy.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/PrivacyPolicy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/PrivacyProtocol2.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/PrivacyProtocol2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/WebUrlActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/WebUrlActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/ocr_ui/ocr_ui.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ocr_ui/ocr_ui.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/base/BaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/base/BaseActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/fragment/MineFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/fragment/MineFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_mine.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_mine.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_cancel.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_cancel.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_close.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_close.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_confirm.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_confirm.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_gallery.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_gallery.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_hint_align_bank_card.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_hint_align_bank_card.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_hint_align_id_card.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_hint_align_id_card.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_hint_align_id_card_back.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_hint_align_id_card_back.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_id_card_locator_back.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_id_card_locator_back.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_id_card_locator_front.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_id_card_locator_front.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_light_off.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_light_off.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_light_on.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_light_on.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_passport_locator.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_passport_locator.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_reset.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_reset.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_rotate.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_rotate.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_round_corner.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_round_corner.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_take_photo_highlight.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_take_photo_highlight.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_take_photo_normal.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_take_photo_normal.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_take_photo_selector.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_take_photo_selector.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/layout_bd_ocr_activity_camera.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/layout_bd_ocr_activity_camera.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/layout_bd_ocr_confirm_result.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/layout_bd_ocr_confirm_result.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/layout_bd_ocr_crop.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/layout_bd_ocr_crop.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/layout_bd_ocr_take_picture.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/layout_bd_ocr_take_picture.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/debug-mergeNativeLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/debug-mergeNativeLibs/merge-state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/packageDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/packageDebugAssets/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_ui/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_ui/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +173,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/AndroidProject/FamousReaderAndroid/trunk" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -245,10 +295,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="805" y="244" key="#PSD/0.0.1920.1040@0.0.1920.1040" timestamp="1608167224313" />
-    <state x="682" y="158" key="#SplashActivity" timestamp="1608001323936">
+    <state x="682" y="158" key="#SplashActivity" timestamp="1608285282729">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="682" y="158" key="#SplashActivity/0.0.1920.1040@0.0.1920.1040" timestamp="1608001323936" />
+    <state x="682" y="158" key="#SplashActivity/0.0.1920.1040@0.0.1920.1040" timestamp="1608285282729" />
     <state x="682" y="165" key="#app" timestamp="1607673416536">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -289,26 +339,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="577" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1607328050813" />
-    <state x="220" y="261" key="FileChooserDialogImpl" timestamp="1608080543961">
+    <state x="220" y="261" key="FileChooserDialogImpl" timestamp="1608254176660">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="220" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608080543961" />
-    <state width="1878" height="401" key="GridCell.Tab.0.bottom" timestamp="1608192742054">
+    <state x="220" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608254176660" />
+    <state width="1454" height="95" key="GridCell.Tab.0.bottom" timestamp="1608284227755">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="401" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608192742054" />
-    <state width="1878" height="401" key="GridCell.Tab.0.center" timestamp="1608192742054">
+    <state width="1454" height="95" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608284227755" />
+    <state width="1454" height="95" key="GridCell.Tab.0.center" timestamp="1608284227754">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="401" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608192742054" />
-    <state width="1878" height="401" key="GridCell.Tab.0.left" timestamp="1608192742053">
+    <state width="1454" height="95" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608284227754" />
+    <state width="1454" height="95" key="GridCell.Tab.0.left" timestamp="1608284227754">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="401" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608192742053" />
-    <state width="1878" height="401" key="GridCell.Tab.0.right" timestamp="1608192742054">
+    <state width="1454" height="95" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608284227754" />
+    <state width="1454" height="95" key="GridCell.Tab.0.right" timestamp="1608284227754">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="401" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608192742054" />
+    <state width="1454" height="95" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608284227754" />
     <state width="1878" height="326" key="GridCell.Tab.1.bottom" timestamp="1608110628570">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -349,6 +399,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608115857519" />
+    <state x="45" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1608284594312">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="45" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608284594312" />
     <state x="0" y="0" width="732" height="1040" maximized="true" key="dock-window-1" timestamp="1607513920148">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -361,18 +415,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="276" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608108479123" />
-    <state x="627" y="462" width="888" height="578" key="find.popup" timestamp="1608107593815">
+    <state x="244" y="462" width="888" height="578" key="find.popup" timestamp="1608289742332">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="627" y="462" width="888" height="578" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608107593815" />
+    <state x="244" y="462" width="888" height="578" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608289742332" />
     <state x="136" y="235" key="run.anything.popup" timestamp="1607425651796">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="136" y="235" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607425651796" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608169184256">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608285695510">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608169184256" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608285695510" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -538,11 +592,6 @@
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/base/BaseActivity.java</url>
-          <line>231</line>
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/ui/activity/SplashActivity.java</url>
           <line>260</line>
           <option name="timeStamp" value="58" />
@@ -575,26 +624,21 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/base/BaseActivity.java</url>
           <line>227</line>
-          <option name="timeStamp" value="70" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/base/BaseActivity.java</url>
-          <line>229</line>
           <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/base/BaseActivity.java</url>
-          <line>218</line>
+          <line>217</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/base/BaseActivity.java</url>
-          <line>222</line>
+          <line>221</line>
           <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/juguo/ocr/base/BaseActivity.java</url>
-          <line>226</line>
+          <line>225</line>
           <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
