@@ -18,8 +18,8 @@ android {
         applicationId "com.juguo.ocr"
         minSdkVersion 19
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0.0"
+        versionCode 2
+        versionName "2.0.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
@@ -92,16 +92,16 @@ MobSDK {
                 appKey "mcWGR5yqGsMxJZjg"
             }
             Wechat {
-                appId "wx2f677d639dd870b3"
-                appSecret "494387edc0d1534eb1eb91af6e7a4905"
+                appId "wx499160198874eb51"
+                appSecret "2639cf2a362b0e9696e4212889394574"
                 userName "gh_afb25ac019c9"
                 path "pages/index/index.html?id=1"
                 withShareTicket true
                 miniprogramType 2
             }
             WechatMoments {
-                appId "wx2f677d639dd870b3"
-                appSecret "494387edc0d1534eb1eb91af6e7a4905"
+                appId "wx499160198874eb51"
+                appSecret "2639cf2a362b0e9696e4212889394574"
             }
         }
     }
@@ -112,6 +112,7 @@ MobSDK {
 
 dependencies {
 
+    //Andorid自带
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support:design:28.0.0'
 
@@ -133,7 +134,7 @@ dependencies {
     //eventbus用来传递信息
     implementation 'org.greenrobot:eventbus:3.0.0'
     implementation files('libs\\umeng-common-9.1.3.jar')
-    implementation files('libs\\ocr-sdk.jar')
+    //implementation files('libs\\ocr-sdk.jar')
     implementation 'com.android.support.constraint:constraint-layout:2.0.4'
 
     //dagger2
@@ -164,7 +165,7 @@ dependencies {
 
     // 图片加载
     implementation 'com.github.bumptech.glide:glide:4.9.0'
-    // 下拉刷新\
+    // 下拉刷新
     implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
     // apk版本更新
     implementation 'com.teprinciple:updateapputils:2.3.0'
@@ -180,16 +181,23 @@ dependencies {
 
     // 穿山甲广告接入
     implementation(name: 'open_ad_sdk', ext: 'aar')
+//    implementation(name: 'ocr_ui/open_ad_sdk', ext: 'aar')
 
     //ocr
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 //    compile 'com.android.support:appcompat-v7:25.1.1'
     implementation files('libs/ocr-sdk.jar')
     implementation project(path: ':ocr_ui')
+    //    implementation 'com.github.wenchaosong:OCR_identify:3.0.8'
+
+    // 支付宝 SDK AAR 包所需的配置
+    compile (name: 'alipaySdk-15.7.9-20200727142846', ext: 'aar')
+
+    // 微信支付
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
 
     //Gson
     implementation 'com.google.code.gson:gson:2.8.6'
-//    implementation 'com.github.wenchaosong:OCR_identify:3.0.8'
 
 
 }

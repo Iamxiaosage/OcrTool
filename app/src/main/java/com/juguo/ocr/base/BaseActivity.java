@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -20,7 +19,6 @@ import android.text.SpannableStringBuilder;
 import android.text.TextUtils;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
-import android.text.style.ForegroundColorSpan;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -211,27 +209,13 @@ public class BaseActivity extends SupportActivity implements LifecycleOwner, Vie
 
     //等待上传的加载框
     public void dialogShow_Protocol() {
-//        SharedPreferences sharedPreferences;
-//        SharedPreferences.Editor editor;
-//
-//        //私有数据
-//        sharedPreferences = getSharedPreferences("isagree", Context.MODE_PRIVATE);
-//
-//
-//        //获取编辑器
-//        editor = sharedPreferences.edit();
-//
-//        boolean isagree = sharedPreferences.getBoolean("isagree", false);
-//
-//        if (!isagree) {
-//
-//        }
+
         showPrivacyDialog();
 
 
     }
 
-    private void showPrivacyDialog() {
+    public void showPrivacyDialog() {
         SharedPreferences sharedPreferences;
         SharedPreferences.Editor editor;
 
@@ -251,12 +235,17 @@ public class BaseActivity extends SupportActivity implements LifecycleOwner, Vie
             Button bt_cancel = (Button) relativeLayout.findViewById(R.id.bt_cancle);
             Button bt_sure = (Button) relativeLayout.findViewById(R.id.bt_sure);
             TextView tv_message = (TextView) relativeLayout.findViewById(R.id.tv_message);
+            TextView tv_welcome = (TextView) relativeLayout.findViewById(R.id.tv_welcome);
+
+
+
 
             String userProtocol = "《用户协议》";
             String privacyProtocol = "《隐私协议》";
 
-            String message = "感谢您信任并使用" + getString(R.string.app_name) + "的产品和服务。在您使用JPG转换App前，请认真阅读并了解我们的";
-            String messageAll = "感谢您信任并使用" + getString(R.string.app_name) + "的产品和服务。在您使用JPG转换App前，请认真阅读并了解我们的" + userProtocol + "和" + privacyProtocol;
+            String message = "感谢您信任并使用" + getString(R.string.app_name) + "的产品和服务。在您使用" + getString(R.string.app_name) + "App前，请认真阅读并了解我们的";
+//            String messageAll = "感谢您信任并使用" + getString(R.string.app_name) + "的产品和服务。在您使用" + getString(R.string.app_name) + "App前，请认真阅读并了解我们的" + userProtocol + "和" + privacyProtocol;
+            String messageAll = message + userProtocol + "和" + privacyProtocol;
 
             int start_User = message.length();
             int end_User = start_User + userProtocol.length() - 1;
@@ -295,6 +284,7 @@ public class BaseActivity extends SupportActivity implements LifecycleOwner, Vie
 
             tv_message.setMovementMethod(LinkMovementMethod.getInstance());
             tv_message.setText(spannableStringBuilder);
+            tv_welcome.setText("欢迎使用"+getString(R.string.app_name));
 
 
             /********************************************************/
@@ -305,7 +295,7 @@ public class BaseActivity extends SupportActivity implements LifecycleOwner, Vie
                 show_Toast("拜拜啦~");
                 dialog.dismiss();
 
-                mContext.finish();
+                this.finish();
             });
 
             bt_sure.setOnClickListener(new View.OnClickListener() {

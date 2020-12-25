@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_marginTop="20dp"
     android:layout_height="match_parent">
+
+
+
+<!--    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:layout_marginTop="20dp"-->
+<!--    android:layout_height="match_parent">-->
 
     <RelativeLayout
         android:id="@+id/ll_titlebar"
@@ -14,7 +23,7 @@
             android:id="@+id/iv_back"
             android:layout_margin="22dp"
             android:layout_alignParentLeft="true"
-            android:src="@mipmap/ic_arrow_left_black"
+            android:src="@mipmap/ic_black_black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <TextView
@@ -34,8 +43,10 @@
             android:layout_width="18.5dp"
             android:layout_height="18dp"/>
     </RelativeLayout>
+<!--    android:focusableInTouchMode="true"-->
+<!--    android:focusable="true"-->
     <EditText
-        android:focusableInTouchMode="true"
+
         android:focusable="true"
         android:padding="20dp"
         android:text="在中国，由于各个行业发展都相对不够成熟，人员素质也参差不齐，这使得“文案”的概念常常被错误引用和理解。最典型的就是把文案等同于“策划”，其实这是两种差别很大，有着本质区别的工作。只是由于文案人员常常需要和策划人员、设计人员配合工作，且策划人员也需要撰写一些方案，这使得很多人误认为文案和策划就是一回事，甚至常常把策划与文案的工作会混淆在一起（这也和发源于中国的“策划学”发展不够成熟有关）。"
@@ -43,5 +54,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+<!--    <include-->
+<!--        layout="@layout/dialog_interaction_ad"-->
+<!--        android:visibility="invisible"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
 
 </LinearLayout>

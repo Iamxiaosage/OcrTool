@@ -51,7 +51,7 @@ public class SplashActivity extends BaseMvpActivity<SplashPresenter> implements 
     private boolean mIsExpress = false; //是否请求模板广告
     private Context mContext;
 
-    @BindView(R.id.splash_container)
+    @BindView(R.id.fl_ad)
     FrameLayout mSplashContainer;
     private String adType;
     private String adImgUrl;
@@ -317,6 +317,6 @@ public class SplashActivity extends BaseMvpActivity<SplashPresenter> implements 
     public void httpError(String e) {
 
         show_Toast("服务器宕机了。。。");
-        goToMainActivity();
+//        goToMainActivity();
     }
 }

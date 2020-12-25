@@ -56,7 +56,7 @@ public class HelpFeedbackActivity extends BaseMvpActivity<HelpFeedbackPresenter>
 
         TitleBarUtils titleBarUtils = new TitleBarUtils(this);
         titleBarUtils.setMiddleTitleText("帮助反馈");
-        titleBarUtils.setLeftImageRes(R.mipmap.ic_arrow_left_black);
+        titleBarUtils.setLeftImageRes(R.mipmap.ic_black_black);
         titleBarUtils.setLeftImageListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

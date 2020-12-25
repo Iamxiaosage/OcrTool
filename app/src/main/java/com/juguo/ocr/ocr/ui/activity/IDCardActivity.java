@@ -35,7 +35,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.TextView;
 
 public class IDCardActivity extends AppCompatActivity {
@@ -67,7 +66,7 @@ public class IDCardActivity extends AppCompatActivity {
 
         TitleBarUtils titleBarUtils = new TitleBarUtils(this);
         titleBarUtils.setMiddleTitleText("身份证识别");
-        titleBarUtils.setLeftImageRes(R.mipmap.ic_arrow_left_black);
+        titleBarUtils.setLeftImageRes(R.mipmap.ic_black_black);
         titleBarUtils.setLeftImageListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

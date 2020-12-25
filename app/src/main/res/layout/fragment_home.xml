@@ -1,371 +1,409 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:scrollbars="vertical"
-    android:fadingEdge="vertical"
-    style="@style/result_pop_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
     >
-
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+<!--    android:paddingBottom="@dimen/activity_vertical_margin"-->
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/activity_main"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        style="@style/result_pop_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="13"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical">
 
-        android:paddingTop="@dimen/activity_vertical_margin"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:orientation="vertical"
-        android:baselineAligned="false">
-
-        <TextView
-            android:paddingLeft="20dp"
-            android:layout_marginTop="45dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="常用服务"
-            android:textColor="#ff363636"
-            android:textSize="20sp"
-            android:layout_marginBottom="7dp"
-            />
-
-        <TableLayout
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/activity_main"
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin">
 
-            android:layout_height="wrap_content">
-            <TableRow >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="7dp"
+                android:paddingLeft="20dp"
+                android:text="常用服务"
+                android:textColor="#ff363636"
+                android:textSize="20sp" />
 
-               <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="0dp"
-                    android:layout_weight="2">
-                    <ImageView
-                        android:background="@mipmap/ic_general_basic_ocr"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/general_basic_button"
-                        tools:ignore="HardcodedText"
-                        android:layout_width="wrap_content" />
+            <TableLayout
+                android:layout_width="match_parent"
 
-                    <TextView
-                        android:textColor="#363636"
-                        android:layout_gravity="center_horizontal"
-                        android:text="通用文字识别"
-                        android:textSize="14sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"></TextView>
-                </LinearLayout>
+                android:layout_height="wrap_content">
 
+                <TableRow>
 
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
 
+                        <ImageView
+                            android:id="@+id/general_basic_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/ic_general_basic_ocr"
+                            tools:ignore="HardcodedText" />
 
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    >
-                    <ImageView
-                        android:background="@mipmap/ic_handwring_ocr"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/handwritting_button"
-                        tools:ignore="HardcodedText"
-                        android:layout_width="wrap_content" />
-
-                    <TextView
-                        android:textColor="#363636"
-                        android:layout_gravity="center_horizontal"
-                        android:text="手写识别"
-                        android:textSize="14sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"></TextView>
-                </LinearLayout>
-            </TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="通用文字识别"
+                            android:textColor="#363636"
+                            android:textSize="14sp"></TextView>
+                    </LinearLayout>
 
 
-            <TableRow>
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="0dp"
-                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/handwritting_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/ic_handwring_ocr"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="手写识别"
+                            android:textColor="#363636"
+                            android:textSize="14sp"></TextView>
+                    </LinearLayout>
+                </TableRow>
 
 
-                    <ImageView
+                <TableRow>
 
-                        android:background="@mipmap/ic_id_card_ocr"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/idcard_button"
-                        tools:ignore="HardcodedText"
-                        android:layout_width="wrap_content" />
-
-                    <TextView
-                        android:textColor="#363636"
-                        android:layout_gravity="center_horizontal"
-                        android:text="身份证识别"
-                        android:textSize="14sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"></TextView>
-                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
 
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="0dp"
-                    android:layout_weight="1">
-                    <ImageView
-                        android:background="@mipmap/ic_bank_card_ocr"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/bankcard_button"
-                        tools:ignore="HardcodedText"
-                        android:layout_width="wrap_content" />
+                        <ImageView
 
-                    <TextView
-                        android:textColor="#363636"
-                        android:layout_gravity="center_horizontal"
-                        android:text="银行卡识别"
-                        android:textSize="14sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"></TextView>
-                </LinearLayout>
+                            android:id="@+id/idcard_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/ic_id_card_ocr"
+                            tools:ignore="HardcodedText" />
 
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="0dp"
-                    android:layout_weight="1">
-                    <ImageView
-                        android:background="@mipmap/ic_network_picture_character_ocr"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/general_webimage_button"
-                        tools:ignore="HardcodedText"
-                        android:layout_width="wrap_content" />
-
-                    <TextView
-
-                        android:textColor="#363636"
-                        android:layout_gravity="center_horizontal"
-                        android:text="网络图片\n文字识别"
-                        android:textSize="14sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"></TextView>
-                </LinearLayout>
-
-            </TableRow>
-
-            <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="身份证识别"
+                            android:textColor="#363636"
+                            android:textSize="14sp"></TextView>
+                    </LinearLayout>
 
 
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
+                        <ImageView
+                            android:id="@+id/bankcard_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/ic_bank_card_ocr"
+                            tools:ignore="HardcodedText" />
 
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="0dp"
-                    android:layout_weight="1">
-                    <ImageView
-                        android:background="@mipmap/ic_drive_license_ocr"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/vehicle_license_button"
-                        tools:ignore="HardcodedText"
-                        android:layout_width="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="银行卡识别"
+                            android:textColor="#363636"
+                            android:textSize="14sp"></TextView>
+                    </LinearLayout>
 
-                    <TextView
-                        android:textColor="#363636"
-                        android:layout_gravity="center_horizontal"
-                        android:text="行驶证识别"
-                        android:textSize="14sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"></TextView>
-                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
+                        <ImageView
+                            android:id="@+id/general_webimage_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/ic_network_picture_character_ocr"
+                            tools:ignore="HardcodedText" />
 
+                        <TextView
 
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="网络图片\n文字识别"
+                            android:textColor="#363636"
+                            android:textSize="14sp"></TextView>
+                    </LinearLayout>
 
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="0dp"
-                    android:layout_weight="1">
-                    <ImageView
-                        android:background="@mipmap/ic_value_add_tax_ocr"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/vat_invoice_button"
-                        tools:ignore="HardcodedText"
-                        android:layout_width="wrap_content" />
-
-                    <TextView
-                        android:textColor="#363636"
-                        android:layout_gravity="center_horizontal"
-                        android:text="增值税发票识别"
-                        android:textSize="14sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"></TextView>
-                </LinearLayout>
-
-
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="0dp"
-                    android:layout_weight="1">
-                    <ImageView
-                        android:background="@mipmap/ic_business_license"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/business_license_button"
-                        tools:ignore="HardcodedText"
-                        android:layout_width="wrap_content" />
-
-                    <TextView
-                        android:textColor="#363636"
-                        android:layout_gravity="center_horizontal"
-                        android:text="营业执照识别"
-                        android:textSize="14sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"></TextView>
-                </LinearLayout>
-
-                <ImageView
-                    android:visibility="gone"
-
-                    android:text="通用文字识别（含生僻字版）"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/general_enhance_button"
-                    tools:ignore="HardcodedText"/>
-
-
-
-            </TableRow>
-
-            <TableRow>
-                <ImageView
-                    android:visibility="gone"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/lottery_button"
-                    android:text="彩票识别"
-                    tools:ignore="HardcodedText"/>
-
-                <ImageView
-                    android:visibility="gone"
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/business_card_button"
-                    android:text="名片识别"
-                    tools:ignore="HardcodedText"/>
-
-                <ImageView
-                    android:visibility="gone"
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/qrcode_button"
-                    android:text="二维码识别"
-                    tools:ignore="HardcodedText"/>
-
-                <ImageView
-                    android:visibility="gone"
-                    android:text="通用文字识别(高精度版)"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/accurate_basic_button"
-                    tools:ignore="HardcodedText"/>
-                <ImageView
-                    android:visibility="gone"
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/numbers_button"
-                    android:text="数字识别"
-                    tools:ignore="HardcodedText"/>
-                <ImageView
-                    android:visibility="gone"
-
-                    android:text="通用文字识别（含位置信息版）"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/general_button"
-                    tools:ignore="HardcodedText"/>
-
-                <ImageView
-                    android:visibility="gone"
-
-                    android:text="通用文字识别(高精度含位置信息版)"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/accurate_button"
-                    tools:ignore="HardcodedText"/>
-
-
-
-
-
-
-
-                <ImageView
-                    android:visibility="gone"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/driving_license_button"
-                    android:text="驾驶证识别"
-                    tools:ignore="HardcodedText"/>
+                </TableRow>
 
                 <TableRow>
 
 
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/vehicle_license_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/ic_drive_license_ocr"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="行驶证识别"
+                            android:textColor="#363636"
+                            android:textSize="14sp"></TextView>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/vat_invoice_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/ic_value_add_tax_ocr"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="增值税发票识别"
+                            android:textColor="#363636"
+                            android:textSize="14sp"></TextView>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/business_license_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/ic_business_license"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="营业执照识别"
+                            android:textColor="#363636"
+                            android:textSize="14sp"></TextView>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/general_enhance_button"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="通用文字识别（含生僻字版）"
+                        android:visibility="gone"
+                        tools:ignore="HardcodedText" />
+
+
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/lottery_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="彩票识别"
+                        android:visibility="gone"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/business_card_button"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="名片识别"
+                        android:visibility="gone"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/qrcode_button"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="二维码识别"
+                        android:visibility="gone"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/accurate_basic_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="通用文字识别(高精度版)"
+                        android:visibility="gone"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/numbers_button"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="数字识别"
+                        android:visibility="gone"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/general_button"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="通用文字识别（含位置信息版）"
+                        android:visibility="gone"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/accurate_button"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="通用文字识别(高精度含位置信息版)"
+                        android:visibility="gone"
+                        tools:ignore="HardcodedText" />
 
 
                     <ImageView
-                        android:visibility="gone"
+                        android:id="@+id/driving_license_button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/license_plate_button"
-                        android:text="车牌识别"
-                        tools:ignore="HardcodedText"/>
-                    <ImageView
+                        android:text="驾驶证识别"
                         android:visibility="gone"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/receipt_button"
-                        android:text="通用票据识别"
-                        tools:ignore="HardcodedText"/>
+                        tools:ignore="HardcodedText" />
+
+                    <TableRow>
+
+
+                        <ImageView
+                            android:id="@+id/license_plate_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="车牌识别"
+                            android:visibility="gone"
+                            tools:ignore="HardcodedText" />
+
+                        <ImageView
+                            android:id="@+id/receipt_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="通用票据识别"
+                            android:visibility="gone"
+                            tools:ignore="HardcodedText" />
+                    </TableRow>
+
+                    <TableRow android:visibility="gone">
+                        <!--    useless-->
+
+
+                        <ImageView
+                            android:id="@+id/custom_button"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="自定义模板识别"
+                            android:visibility="visible"
+                            tools:ignore="HardcodedText" />
+
+                    </TableRow>
                 </TableRow>
 
                 <TableRow android:visibility="gone">
-                    <!--    useless-->
-
-
-                    <ImageView
-                        android:visibility="visible"
-
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/custom_button"
-                        android:text="自定义模板识别"
-                        tools:ignore="HardcodedText"/>
 
                 </TableRow>
-            </TableRow>
-
-            <TableRow android:visibility="gone">
-
-            </TableRow>
 
 
+                <TableRow>
 
-            <TableRow>
-                <ImageView
-                    android:visibility="gone"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/passport_button"
-                    android:text="护照识别"
-                    tools:ignore="HardcodedText"/>
-            </TableRow>
-            <TableRow>
+                    <ImageView
+                        android:id="@+id/passport_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="护照识别"
+                        android:visibility="gone"
+                        tools:ignore="HardcodedText" />
+                </TableRow>
 
-            </TableRow>
-        </TableLayout>
+                <TableRow>
 
-    </LinearLayout>
-</ScrollView>
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <FrameLayout
+        android:id="@+id/fl_login_now"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:background="#B3000000"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:text="登录可使用更多功能，赶快去登录吧！"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_login_now"
+            android:layout_width="66dp"
+            android:layout_height="22dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/shape_bg_loging_now"
+            android:gravity="center"
+            android:text="马上登录"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+    </FrameLayout>
+
+
+</LinearLayout>

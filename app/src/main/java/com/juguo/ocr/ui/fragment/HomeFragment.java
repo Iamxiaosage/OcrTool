@@ -14,6 +14,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -29,8 +30,9 @@ import com.google.gson.JsonSyntaxException;
 //import com.juguo.ocr.R;
 import com.juguo.ocr.R;
 import com.juguo.ocr.base.BaseMvpFragment;
+import com.juguo.ocr.bean.CloseLoginMessage;
+import com.juguo.ocr.bean.UserInfos;
 import com.juguo.ocr.dragger.bean.User;
-import com.juguo.ocr.dragger.bean.UserInfo;
 import com.juguo.ocr.ocr.bean.VatInvoce;
 import com.juguo.ocr.ocr.bean.Words;
 import com.juguo.ocr.ocr.ui.activity.IDCardActivity;
@@ -39,12 +41,17 @@ import com.juguo.ocr.ocr.utils.FileUtil;
 import com.juguo.ocr.response.AccountInformationResponse;
 import com.juguo.ocr.response.LoginResponse;
 import com.juguo.ocr.ui.activity.ContentActivity;
+import com.juguo.ocr.ui.activity.LoginActivity;
+import com.juguo.ocr.ui.activity.NotLoginActivity;
 import com.juguo.ocr.ui.activity.contract.HomeContract;
 import com.juguo.ocr.ui.activity.presenter.HomePresenter;
 import com.juguo.ocr.utils.CommUtils;
 import com.juguo.ocr.utils.Constants;
 import com.juguo.ocr.utils.MySharedPreferences;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -104,6 +111,8 @@ public class HomeFragment extends BaseMvpFragment<HomePresenter> implements Home
     };
 
 
+    @BindView(R.id.fl_login_now)
+    public FrameLayout fl_login_now;
     @BindView(R.id.general_basic_button)
     ImageView general_basic_button;
     @BindView(R.id.handwritting_button)
@@ -174,19 +183,35 @@ public class HomeFragment extends BaseMvpFragment<HomePresenter> implements Home
         mAppContext = getApplicationContext();
         alertDialog = new AlertDialog.Builder(mContext);
 
-
-
-
         initAccessTokenWithAkSk();
-
 
         mMySharedPreferences = new MySharedPreferences(getActivity(), "Shared");
         String uuid = (String) mMySharedPreferences.getValue("uuid", "");
         if (TextUtils.isEmpty(uuid)) {
             mMySharedPreferences.putValue("uuid", CommUtils.getUniqueID(getActivity()));
         }
+
+        EventBus.getDefault().register(this);
+
         mPresenter.login(loginType());
+
+        if (!CommUtils.isLogin(mContext)) {
+            fl_login_now.setVisibility(View.VISIBLE);
+        }
     }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onEvent(CloseLoginMessage event) {
+        Toast.makeText(getActivity(),"收到消息,是否登录："+event.isLogin(),Toast.LENGTH_LONG).show();
+        if (event.isLogin()) {
+            fl_login_now.setVisibility(View.GONE);
+        } else {
+            fl_login_now.setVisibility(View.VISIBLE);
+        }
+    }
+
+
+
 
     private void setIsEnabled(boolean isEnable) {
         general_basic_button.setEnabled(isEnable);
@@ -663,9 +688,28 @@ public class HomeFragment extends BaseMvpFragment<HomePresenter> implements Home
         }
     }
 
-    @OnClick({R.id.general_basic_button, R.id.handwritting_button, R.id.idcard_button, R.id.general_webimage_button, R.id.bankcard_button, R.id.business_license_button, R.id.accurate_basic_button, R.id.general_button, R.id.accurate_button, R.id.vat_invoice_button, R.id.general_enhance_button, R.id.driving_license_button, R.id.vehicle_license_button, R.id.license_plate_button, R.id.receipt_button, R.id.custom_button, R.id.passport_button, R.id.numbers_button, R.id.qrcode_button, R.id.business_card_button, R.id.lottery_button})
+    @OnClick({R.id.tv_login_now,R.id.general_basic_button, R.id.handwritting_button, R.id.idcard_button, R.id.general_webimage_button, R.id.bankcard_button, R.id.business_license_button, R.id.accurate_basic_button, R.id.general_button, R.id.accurate_button, R.id.vat_invoice_button, R.id.general_enhance_button, R.id.driving_license_button, R.id.vehicle_license_button, R.id.license_plate_button, R.id.receipt_button, R.id.custom_button, R.id.passport_button, R.id.numbers_button, R.id.qrcode_button, R.id.business_card_button, R.id.lottery_button})
     public void onViewClicked(View view) {
+
+
+        if (!CommUtils.isLogin(mContext)) {
+            Intent intent = new Intent(mContext, NotLoginActivity.class);
+            startActivity(intent);
+
+            return;
+        }
+
+
+
         switch (view.getId()) {
+            case R.id.tv_login_now:
+                // 马上登录
+//                Intent intent = new Intent(mContext, LoginActivity.class);
+                intent = new Intent(mContext, LoginActivity.class);
+                startActivity(intent);
+                break;
+
+
             case R.id.general_basic_button:
                 if (!checkTokenStatus()) {
                     return;
@@ -681,7 +725,7 @@ public class HomeFragment extends BaseMvpFragment<HomePresenter> implements Home
                 if (!checkTokenStatus()) {
                     return;
                 }
-                Intent intent = new Intent(mContext, CameraActivity.class);
+                intent = new Intent(mContext, CameraActivity.class);
                 intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
                         FileUtil.getSaveFile(getApplication()).getAbsolutePath());
                 intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
@@ -1070,7 +1114,7 @@ public class HomeFragment extends BaseMvpFragment<HomePresenter> implements Home
      */
     private User loginType() {
         User user = new User();
-        UserInfo userInfo = new UserInfo();
+        UserInfos userInfo = new UserInfos();
         if (CommUtils.isLogin(getActivity())) {
             String loginType = (String) mMySharedPreferences.getValue("loginType", "");
             String userId = (String) mMySharedPreferences.getValue("userId", "");

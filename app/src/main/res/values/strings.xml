@@ -1,21 +1,16 @@
 <resources>
 
-
-<!--    xiaomi，OPPO，hauwei-->
-    <string name="app_name">JPG转换</string>
-
     <!--    vivo-->
-<!--        <string name="app_name">小果文字识别</string>-->
+    <!--            <string name="app_name">小果文字识别</string>-->
+    <!--        <string name="company_name">深圳聚果科技有限公司</string>-->
 
 
+    <!--    华为-->
+        <string name="company_name">深圳微视天利科技有限公司</string>        <string name="app_name">JPG转换</string>
 
 
-<!--    xiiaomi，oppo，vivo-->
-    <string name="company_name">深圳聚果科技有限公司</string>
-
-<!--    huawei-->
-<!--    <string name="company_name">深圳微视天利科技有限公司</string>-->
-
+    <!--    xiiaomi，oppo-->
+<!--    <string name="app_name">JPG转换</string>    <string name="company_name">深圳聚果科技有限公司</string>-->
 
 
     <string name="erro">服务器异常，请稍后再试！</string>
@@ -68,7 +63,7 @@
     <string name="welcome">欢迎进入</string>
 
 
-<!--    行驶证-->
+    <!--    行驶证-->
     <string name="vehicle_recognize_code">车辆识别代号</string>
     <string name="address_vehicle">住址</string>
     <string name="Date_Of_Issue">发证日期</string>
@@ -80,5 +75,6 @@
     <string name="Plate_number">号牌号码</string>
     <string name="Date_of_registration">注册日期</string>
 
-
+    <!-- WXPayEntryActivity -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
 </resources>

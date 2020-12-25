@@ -44,6 +44,8 @@ public class BaseFragment<A extends BaseActivity> extends SupportFragment implem
 
     }
 
+//    public void showToast
+
     /**
      * 获取绑定的Activity，防止出现 getActivity() 为空
      */

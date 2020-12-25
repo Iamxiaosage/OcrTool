@@ -4,6 +4,7 @@ import android.text.TextUtils;
 
 import com.alibaba.fastjson.JSON;
 import com.juguo.ocr.MyApplication;
+import com.juguo.ocr.bean.UserInfos;
 import com.juguo.ocr.dragger.bean.User;
 import com.juguo.ocr.dragger.bean.UserInfo;
 import com.juguo.ocr.response.LoginResponse;
@@ -82,7 +83,7 @@ public class HttpCommonInterceptor implements Interceptor {
             String userId = (String) mySharedPreferences.getValue("userId", "");
 
             User user = new User();
-            UserInfo userInfo = new UserInfo();
+            UserInfos userInfo = new UserInfos();
             if (isLogin) {
                 if (Wechat.NAME.equals(loginType)) {
                     userInfo.setType(3);

@@ -9,7 +9,7 @@ import android.widget.RelativeLayout;
 import com.juguo.ocr.R;
 import com.juguo.ocr.base.BaseMvpActivity;
 import com.juguo.ocr.base.BaseResponse;
-import com.juguo.ocr.bean.CloseTsMessage;
+import com.juguo.ocr.bean.CloseLoginMessage;
 import com.juguo.ocr.ui.activity.contract.SettingContract;
 import com.juguo.ocr.ui.activity.presenter.SettingPresenter;
 import com.juguo.ocr.utils.CommUtils;
@@ -56,7 +56,7 @@ public class SettingActivity extends BaseMvpActivity<SettingPresenter> implement
 
         TitleBarUtils titleBarUtils = new TitleBarUtils(this);
         titleBarUtils.setMiddleTitleText("设置");
-        titleBarUtils.setLeftImageRes(R.mipmap.ic_arrow_left_black);
+        titleBarUtils.setLeftImageRes(R.mipmap.ic_black_black);
         titleBarUtils.setLeftImageListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -81,6 +81,7 @@ public class SettingActivity extends BaseMvpActivity<SettingPresenter> implement
                 logout();
             }
         });
+
     }
 
     /**
@@ -99,7 +100,7 @@ public class SettingActivity extends BaseMvpActivity<SettingPresenter> implement
         if (!response.isSuccess()) {
             ToastUtils.shortShowStr(mContext, response.getMsg());
         } else {
-            CloseTsMessage closeTsMessage = new CloseTsMessage();
+            CloseLoginMessage closeTsMessage = new CloseLoginMessage();
             closeTsMessage.setTs(false);
             EventBus.getDefault().post(closeTsMessage);
             String loginType = (String) mySharedPreferences.getValue("loginType", "");

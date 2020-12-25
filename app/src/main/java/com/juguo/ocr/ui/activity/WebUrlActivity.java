@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -68,7 +69,17 @@ public class WebUrlActivity extends BaseMvpActivity<LoginPresenter> implements L
 
 
         url = getIntent().getStringExtra("url");
+        String title = getIntent().getStringExtra("title");
+        TitleBarUtils titleBarUtils = new TitleBarUtils(this);
+//        titleBarUtils.setMiddleTitleText(title);
+        titleBarUtils.setLeftImageRes(R.mipmap.ic_black_black);
 
+        titleBarUtils.setLeftImageListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         initView();
 
     }

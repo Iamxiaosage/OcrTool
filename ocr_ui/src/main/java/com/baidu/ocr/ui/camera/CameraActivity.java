@@ -6,14 +6,18 @@ package com.baidu.ocr.ui.camera;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.List;
 
 import com.baidu.idcardquality.IDcardQualityProcess;
 import com.baidu.ocr.ui.R;
 import com.baidu.ocr.ui.crop.CropView;
 import com.baidu.ocr.ui.crop.FrameOverlayView;
 
+
 import android.Manifest;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
@@ -28,6 +32,7 @@ import android.os.Handler;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
+import android.util.Log;
 import android.view.Surface;
 import android.view.View;
 import android.widget.ImageView;
@@ -277,6 +282,8 @@ public class CameraActivity extends Activity {
     private View.OnClickListener takeButtonOnClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+
+
             cameraView.takePicture(outputFile, takePictureCallback);
         }
     };
@@ -303,6 +310,12 @@ public class CameraActivity extends Activity {
             });
         }
     };
+
+
+    /**
+     * 加载插屏广告
+     */
+
 
     private CameraView.OnTakePictureCallback takePictureCallback = new CameraView.OnTakePictureCallback() {
         @Override
@@ -363,6 +376,7 @@ public class CameraActivity extends Activity {
     private void cropAndConfirm() {
         cameraView.getCameraControl().pause();
         updateFlashMode();
+
         doConfirmResult();
     }
 
@@ -389,7 +403,10 @@ public class CameraActivity extends Activity {
     private View.OnClickListener confirmButtonOnClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            doConfirmResult();
+
+//            doConfirmResult();
+
+
         }
     };
 

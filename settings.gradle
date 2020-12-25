@@ -1,3 +1,5 @@
 include ':ocr_ui'
 include ':app'
-rootProject.name = "ToolApp"
+/*project(':ocr_ui').projectDir = new File('../ocr_ui')
+project(':app').projectDir = new File('../app')*/
+rootProject.name = "ToolApp_Garbage"

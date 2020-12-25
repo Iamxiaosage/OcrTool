@@ -17,8 +17,6 @@
 
 
 
-
-
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -27,7 +25,8 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<!--        android:theme="@style/Base.AppTheme">-->
+<!--    android:theme="@style/AppTheme">-->
+<!--    android:theme="@style/AppTheme">-->
 
         <activity
             android:theme="@style/Base.AppTheme"
@@ -105,6 +104,19 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ui.activity.VipActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+
         <activity
             android:name=".ui.activity.LoginActivity"
             android:screenOrientation="portrait"
@@ -138,6 +150,10 @@
             </intent-filter>
 
         </activity>
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
     </application>
 
 </manifest>

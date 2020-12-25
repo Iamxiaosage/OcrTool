@@ -9,6 +9,7 @@ import com.juguo.ocr.ui.activity.HelpFeedbackActivity;
 import com.juguo.ocr.ui.activity.LoginActivity;
 import com.juguo.ocr.ui.activity.SettingActivity;
 import com.juguo.ocr.ui.activity.SplashActivity;
+import com.juguo.ocr.ui.activity.VipActivity;
 import com.juguo.ocr.ui.activity.WebUrlActivity;
 
 import dagger.Component;
@@ -32,4 +33,5 @@ public interface ActivityComponent {
 
     void inject(HelpFeedbackActivity helpFeedbackActivity);
 
+    void inject(VipActivity vipActivity);
 }

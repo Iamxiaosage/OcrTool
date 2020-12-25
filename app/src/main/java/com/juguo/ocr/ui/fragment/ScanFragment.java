@@ -99,8 +99,6 @@ public class ScanFragment extends BaseMvpFragment<CenterPresenter> implements Ce
     protected void initViewAndData() {
         mActivity = getBindingActivity();
 
-
-
     }
 
     private void updateScanData() {

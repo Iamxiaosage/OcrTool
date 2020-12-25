@@ -2,25 +2,35 @@ package com.juguo.ocr.ui.fragment;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.Display;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.alibaba.fastjson.JSON;
-//import com.juguo.ocr.R;
+import com.bytedance.sdk.openadsdk.AdSlot;
+import com.bytedance.sdk.openadsdk.TTAdNative;
+import com.bytedance.sdk.openadsdk.TTAdSdk;
+import com.bytedance.sdk.openadsdk.TTNativeExpressAd;
 import com.juguo.ocr.R;
 import com.juguo.ocr.base.BaseMvpFragment;
 import com.juguo.ocr.bean.AppConfigBean;
+import com.juguo.ocr.bean.EventBusMessage;
 import com.juguo.ocr.bean.MarketPkgsBean;
 import com.juguo.ocr.bean.VersionUpdataBean;
 import com.juguo.ocr.response.VersionUpdataResponse;
@@ -28,13 +38,13 @@ import com.juguo.ocr.ui.activity.AboutUsActivity;
 import com.juguo.ocr.ui.activity.HelpFeedbackActivity;
 import com.juguo.ocr.ui.activity.LoginActivity;
 import com.juguo.ocr.ui.activity.SettingActivity;
+import com.juguo.ocr.ui.activity.VipActivity;
 import com.juguo.ocr.ui.activity.WebUrlActivity;
 import com.juguo.ocr.ui.activity.contract.MineContract;
 import com.juguo.ocr.ui.activity.presenter.MinePresenter;
 import com.juguo.ocr.utils.CommUtils;
 import com.juguo.ocr.utils.Constants;
 import com.juguo.ocr.utils.MySharedPreferences;
-//import com.juguo.ocr.utils.NoScrollGridView;
 import com.juguo.ocr.utils.ToastUtils;
 import com.juguo.ocr.utils.Util;
 import com.juguo.ocr.view.GwhpPopupwindowAdapter;
@@ -42,11 +52,17 @@ import com.juguo.ocr.view.NoScrollGridView;
 import com.juguo.ocr.view.XCRoundImageView;
 import com.umeng.analytics.MobclickAgent;
 
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
+import butterknife.Unbinder;
 import cn.sharesdk.framework.Platform;
 import cn.sharesdk.framework.PlatformActionListener;
 import cn.sharesdk.framework.ShareSDK;
@@ -59,6 +75,9 @@ import model.UpdateConfig;
 import permissions.dispatcher.NeedsPermission;
 import permissions.dispatcher.RuntimePermissions;
 import update.UpdateAppUtils;
+
+//import com.juguo.ocr.R;
+//import com.juguo.ocr.utils.NoScrollGridView;
 
 @RuntimePermissions
 public class MineFragment extends BaseMvpFragment<MinePresenter> implements MineContract.View {
@@ -73,6 +92,9 @@ public class MineFragment extends BaseMvpFragment<MinePresenter> implements Mine
     public TextView tv_vesion;
     @BindView(R.id.ll_view)
     public LinearLayout ll_view;
+    @BindView(R.id.ll_vip)
+    LinearLayout ll_Vip;
+    Unbinder unbinder;
 
     private Context mContext;
     //private ArrayList<MarketPkgsBean> installedMarketPkgs;
@@ -80,6 +102,11 @@ public class MineFragment extends BaseMvpFragment<MinePresenter> implements Mine
 
 
     private ArrayList<MarketPkgsBean> installedMarketPkgs;
+
+
+    private String isOpenMember;
+    private String level;
+    private Activity activity;
 
 
     @Override
@@ -99,9 +126,14 @@ public class MineFragment extends BaseMvpFragment<MinePresenter> implements Mine
         // 设置布局在状态下方加载
         CommUtils.setImmerseLayout(ll_view, getBindingActivity());
         mySharedPreferences = new MySharedPreferences(mContext, "Shared");
-//        EventBus.getDefault().register(this);
 
+        activity = getActivity();
         initView();
+
+        ToastUtils.longShowStr(mContext,"进入版本更新了2");
+
+        getGetAppVersion();
+
     }
 
     private void initView() {
@@ -118,6 +150,56 @@ public class MineFragment extends BaseMvpFragment<MinePresenter> implements Mine
             Util.displayCircleCropImgView(mContext, img_user, userIcon, R.mipmap.ic_user_place);
         }
         tv_vesion.setText(CommUtils.getVersionName(mContext));
+
+
+//        loadInteractionAd("945699954");
+
+
+    }
+
+
+    /**
+     * 加载插屏广告
+     */
+    private void loadInteractionAd(String codeId) {
+        TTAdNative mTTAdNative = TTAdSdk.getAdManager().createAdNative(getActivity());
+
+        AdSlot adSlot = new AdSlot.Builder()
+                .setCodeId(codeId) //广告位id
+                .setSupportDeepLink(true)
+                .setAdCount(1) //请求广告数量为1到3条
+                .setExpressViewAcceptedSize(1080, 1920) //期望模板广告view的size,单位dp
+                .build();
+
+        mTTAdNative.loadInteractionExpressAd(adSlot, new TTAdNative.NativeExpressAdListener() {
+            //请求广告失败
+            @Override
+            public void onError(int code, String message) {
+
+                Log.v("ocr", code + "返回信息" + message);
+                Toast.makeText(getActivity(), "错误码。。" + code, Toast.LENGTH_LONG).show();
+            }
+
+            //请求广告成功
+            @Override
+            public void onNativeExpressAdLoad(List<TTNativeExpressAd> ads) {
+                Log.v("ocr", ads.toString());
+                Toast.makeText(getActivity(), "错误码。。" + ads.toString(), Toast.LENGTH_LONG).show();
+
+                TTNativeExpressAd ttNativeExpressAd = ads.get(0);
+
+                View expressAdView = ttNativeExpressAd.getExpressAdView();
+
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                AlertDialog dialog = builder.create();
+                dialog.setView(expressAdView);
+                dialog.show();
+
+                ttNativeExpressAd.render();
+
+            }
+        });
     }
 
 
@@ -158,11 +240,15 @@ public class MineFragment extends BaseMvpFragment<MinePresenter> implements Mine
         });
     }
 
-    @OnClick({  R.id.rl_give_me_a_good_comment, R.id.rl_bzfk, R.id.rl_fxhy,
+    @OnClick({R.id.ll_vip,R.id.rl_give_me_a_good_comment, R.id.rl_bzfk, R.id.rl_fxhy,
             R.id.rl_yszc, R.id.rl_gywm, R.id.img_setting, R.id.rl_bbgx,
-             R.id.ll_login})
+            R.id.ll_login})
     public void btn_Login_Click(View v) {
         switch (v.getId()) {
+            case R.id.ll_vip:
+                Intent vipIntent = new Intent(mContext, VipActivity.class);
+                startActivity(vipIntent);
+                break;
             case R.id.rl_give_me_a_good_comment:
                 // 给我好评
 //                showDialog();
@@ -221,6 +307,16 @@ public class MineFragment extends BaseMvpFragment<MinePresenter> implements Mine
         }
     }
 
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        if (resultCode == 10) {
+            tv_user_name.setText("未登录，登录更精彩");
+//            tv_vip.setText("");
+//            img_vip_logo.setVisibility(View.GONE);
+            img_user.setImageResource(R.mipmap.user_img);
+        }
+    }
 
 
     /**
@@ -344,21 +440,44 @@ public class MineFragment extends BaseMvpFragment<MinePresenter> implements Mine
     }
 
     private void showHyXx() {
-        /*level = (String) mySharedPreferences.getValue("level", "");
-        String dueTime = (String) mySharedPreferences.getValue("dueTime", "");
-        String str = showTvVip(level, dueTime);
-        tv_vip.setText(str);*/
+//        level = (String) mySharedPreferences.getValue("level", "");
+//        String dueTime = (String) mySharedPreferences.getValue("dueTime", "");
+//        String str = showTvVip(level, dueTime);
+//        tv_vip.setText(str);
     }
 
-    /*@Subscribe(threadMode = ThreadMode.MAIN)
+//    private String showTvVip(String level, String dueTime) {
+//        isOpenMember = (String) mySharedPreferences.getValue("isOpenMember", "");
+//        if (CommUtils.isLogin(mContext)) {
+////            long count = Util.timeCompare(dueTime);
+////            if ("2".equals(level)) {
+////                img_vip_logo.setVisibility(View.VISIBLE);
+////                // 月度会员
+////                if (count <= 0) {
+////                    return "会员有效期/已到期，如需使用请重新购买";
+////                } else {
+////                    return String.format("会员有效期/剩余%d天", count);
+////                }
+////            } else {
+//            if ("1".equals(isOpenMember)) {
+//                img_vip_logo.setVisibility(View.VISIBLE);
+//                return "更多课程，可点此了解";
+//            }
+////            }
+//        }
+//        img_vip_logo.setVisibility(View.GONE);
+//        return "";
+//    }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEvent(EventBusMessage event) {
-        *//*if (!TextUtils.isEmpty(event.getUserName())) {
+        if (!TextUtils.isEmpty(event.getUserName())) {
             tv_user_name.setText(event.getUserName());
         }
         if (!TextUtils.isEmpty(event.getUserIcon())) {
             Util.displayCircleCropImgView(mContext, img_user, event.getUserIcon(), R.mipmap.user_img);
-        }*//*
-    }*/
+        }
+    }
 
     /**
      * 版本更新
@@ -375,6 +494,27 @@ public class MineFragment extends BaseMvpFragment<MinePresenter> implements Mine
                     AppConfigBean appConfigBean = JSON.parseObject(appConfig, AppConfigBean.class);
                     String ifPay = appConfigBean.getIfPay();
                     mySharedPreferences.putValue("isOpenMember", ifPay);
+
+                    if ("1".equals(ifPay)) {
+
+//                        ToastUtils.shortShowStr(mContext,"您已经购买会员。");
+//                        activity.findViewById(R.id.l_yg).setVisibility(View.VISIBLE);
+                    } else {
+//                        ToastUtils.shortShowStr(mContext,"您还不是会员。");
+
+//                        activity.findViewById(R.id.l_yg).setVisibility(View.GONE);
+                    }
+                }
+                List<VersionUpdataResponse.RecAccountList> recAccountList = result.getRecAccountList();
+                if (recAccountList != null && recAccountList.size() > 0) {
+                    for (int i = 0; i < recAccountList.size(); i++) {
+                        String payerType = recAccountList.get(i).getPayerType();
+                        if ("ALI".equalsIgnoreCase(payerType)) {
+                            mySharedPreferences.putValue("ali", recAccountList.get(i).getId());
+                        } else if ("WX".equalsIgnoreCase(payerType)) {
+                            mySharedPreferences.putValue("wx", recAccountList.get(i).getId());
+                        }
+                    }
                 }
                 VersionUpdataResponse.UpdateVInfo updateV = result.getUpdateV();
                 if (updateV != null) {
@@ -384,7 +524,7 @@ public class MineFragment extends BaseMvpFragment<MinePresenter> implements Mine
                         String vIfForceUpd = result.getvType();
                         UiConfig uiConfig = new UiConfig();
                         uiConfig.setUiType(UiType.CUSTOM);
-                        uiConfig.setCustomLayoutId(R.layout.view_update_version);
+                        uiConfig.setCustomLayoutId(R.layout.update_version);
                         UpdateConfig updateConfig = new UpdateConfig();
                         // 是否强制更新
                         if ("1".equals(vIfForceUpd)) {
@@ -399,17 +539,56 @@ public class MineFragment extends BaseMvpFragment<MinePresenter> implements Mine
                                 .uiConfig(uiConfig)
                                 .updateConfig(updateConfig)
                                 .update();
-                    } else {
-                        ToastUtils.shortShowStr(mContext, "已经是最新版本");
                     }
-                } else {
-                    ToastUtils.shortShowStr(mContext, "已经是最新版本");
                 }
-            } else {
-                ToastUtils.shortShowStr(mContext, "已经是最新版本");
             }
         }
     }
+//    @Override
+//    public void httpCallback(VersionUpdataResponse response) {
+//        if (response.isSuccess()) {
+//            VersionUpdataResponse.VersionUpdataInfo result = response.getResult();
+//            if (result != null) {
+//                String appConfig = result.getAppConfig();
+//                if (!TextUtils.isEmpty(appConfig)) {
+//                    AppConfigBean appConfigBean = JSON.parseObject(appConfig, AppConfigBean.class);
+//                    String ifPay = appConfigBean.getIfPay();
+//                    mySharedPreferences.putValue("isOpenMember", ifPay);
+//                }
+//                VersionUpdataResponse.UpdateVInfo updateV = result.getUpdateV();
+//                if (updateV != null) {
+//                    if (!TextUtils.isEmpty(updateV.getUrl())) {
+//                        mySharedPreferences.putValue("apkUrl", updateV.getUrl());
+//                        String desc = result.getvRemark();
+//                        String vIfForceUpd = result.getvType();
+//                        UiConfig uiConfig = new UiConfig();
+//                        uiConfig.setUiType(UiType.CUSTOM);
+//                        uiConfig.setCustomLayoutId(R.layout.view_update_version);
+//                        UpdateConfig updateConfig = new UpdateConfig();
+//                        // 是否强制更新
+//                        if ("1".equals(vIfForceUpd)) {
+//                            updateConfig.setForce(true);
+//                        } else {
+//                            updateConfig.setForce(false);
+//                        }
+//
+//                        UpdateAppUtils
+//                                .getInstance()
+//                                .apkUrl(updateV.getUrl())
+//                                .uiConfig(uiConfig)
+//                                .updateConfig(updateConfig)
+//                                .update();
+//                    } else {
+//                        ToastUtils.shortShowStr(mContext, "已经是最新版本");
+//                    }
+//                } else {
+//                    ToastUtils.shortShowStr(mContext, "已经是最新版本");
+//                }
+//            } else {
+//                ToastUtils.shortShowStr(mContext, "已经是最新版本");
+//            }
+//        }
+//    }
 
 
     @Override
@@ -427,6 +606,7 @@ public class MineFragment extends BaseMvpFragment<MinePresenter> implements Mine
      * 获取app的版本信息
      */
     private void getGetAppVersion() {
+        ToastUtils.longShowStr(mContext,"进入版本更新了2");
         if (!CommUtils.isNetworkAvailable(mContext)) {
             ToastUtils.shortShowStr(getBindingActivity(), Constants.NET_ERROR);
             return;
@@ -450,5 +630,19 @@ public class MineFragment extends BaseMvpFragment<MinePresenter> implements Mine
     @NeedsPermission({Manifest.permission.WRITE_EXTERNAL_STORAGE})
     void onPermissionDenied() {
         ToastUtils.shortShowStr(mContext, "权限未授予，部分功能无法使用");
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        // TODO: inflate a fragment view
+        View rootView = super.onCreateView(inflater, container, savedInstanceState);
+        unbinder = ButterKnife.bind(this, rootView);
+        return rootView;
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        unbinder.unbind();
     }
 }

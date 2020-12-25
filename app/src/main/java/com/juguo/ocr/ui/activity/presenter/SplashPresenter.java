@@ -2,6 +2,7 @@ package com.juguo.ocr.ui.activity.presenter;
 
 import android.arch.lifecycle.LifecycleOwner;
 import android.content.Context;
+import android.util.Log;
 
 import com.juguo.ocr.base.BaseMvpPresenter;
 import com.juguo.ocr.bean.VersionUpdataBean;
@@ -33,11 +34,14 @@ public class SplashPresenter extends BaseMvpPresenter<SplashContract.View> imple
                     @Override
                     public void onSuccess(VersionUpdataResponse result) {
                         mView.httpCallback(result);
+                        Log.i("ocr",result.toString());
                     }
 
                     @Override
                     public void onFailure(Throwable e, String errorMsg) {
                         mView.httpError(e.toString());
+                        Log.i("ocr",e.toString());
+
                     }
                 });
     }

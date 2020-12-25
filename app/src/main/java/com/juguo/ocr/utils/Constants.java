@@ -8,18 +8,20 @@ public class Constants {
     //  573c67e79ee69e07ae4087ede27d0465
 
     // 测试环境
-  //  public static String BASE_URL = "http://app.91juguo.com/testJ/";
+    public static String BASE_URL = "http://app.91juguo.com/testJ/";
     // 正式环境
-    public static String BASE_URL = "http://app.91juguo.com/api/";
+//    public static String BASE_URL = "http://app.91juguo.com/api/";
 //    public static String BASE_URL = "http://app.91juguo.com/bgtest/";
 
-    // 微信appId
-    public static final String WX_APP_ID = "wx2f677d639dd870b3";
-    // 申请支付功能的商户号
-    public static final String WX_MCH_ID = "1525928841";
-    // 商品平台API密钥
+    // 微信appId 要发送给服务端
+//    public static final String WX_APP_ID = "wx499160198874eb51";
+    public static final String WX_APP_ID = "wx499160198874eb51";
+    // 微信支付申请支付功能的商户号
+    public static final String WX_MCH_ID = "iui";
+    // 微信支付 商品平台API密钥
+    //public static final String WX_PRIVATE_KEY = "1d63792986ea3383659af41d62956ca6";
     public static final String WX_PRIVATE_KEY = "wstl2016wstl2016wstl2016wstl2016";
-
+//2639cf2a362b0e9696e4212889394574
     // 穿山甲
     public static final String CSJ_APP_ID = "5126521";// 应用id
     public static final String CSJ_CODE_ID = "887412015";// 代码位id

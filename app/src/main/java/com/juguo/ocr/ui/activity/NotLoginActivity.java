@@ -26,7 +26,7 @@ public class NotLoginActivity extends BaseActivity {
         TextView tv_context = findViewById(R.id.tv_context);
 
         TitleBarUtils titleBarUtils = new TitleBarUtils(this);
-        titleBarUtils.setLeftImageRes(R.mipmap.ic_arrow_left_black);
+        titleBarUtils.setLeftImageRes(R.mipmap.ic_black_black);
         titleBarUtils.setLeftImageListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

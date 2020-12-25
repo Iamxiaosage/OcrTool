@@ -19,7 +19,7 @@ public class AboutUsActivity extends BaseActivity {
 
         TitleBarUtils titleBarUtils = new TitleBarUtils(this);
         titleBarUtils.setMiddleTitleText("关于我们");
-        titleBarUtils.setLeftImageRes(R.mipmap.ic_arrow_left_black);
+        titleBarUtils.setLeftImageRes(R.mipmap.ic_black_black);
         titleBarUtils.setLeftImageListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

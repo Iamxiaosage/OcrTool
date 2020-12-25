@@ -12,16 +12,21 @@ import android.widget.ImageView;
 import com.juguo.ocr.R;
 //import com.juguo.ocr.R;
 import com.juguo.ocr.base.BaseMvpActivity;
+import com.juguo.ocr.bean.CloseLoginMessage;
+import com.juguo.ocr.bean.EventBusMessage;
+import com.juguo.ocr.bean.UserInfos;
 import com.juguo.ocr.dragger.bean.User;
-import com.juguo.ocr.dragger.bean.UserInfo;
 import com.juguo.ocr.response.AccountInformationResponse;
 import com.juguo.ocr.response.LoginResponse;
+import com.juguo.ocr.ui.MainActivity;
 import com.juguo.ocr.ui.activity.contract.LoginContract;
 import com.juguo.ocr.ui.activity.presenter.LoginPresenter;
 import com.juguo.ocr.utils.Constants;
 import com.juguo.ocr.utils.MySharedPreferences;
 import com.juguo.ocr.utils.ToastUtils;
 import com.juguo.ocr.utils.Util;
+
+import org.greenrobot.eventbus.EventBus;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -54,6 +59,10 @@ public class LoginActivity extends BaseMvpActivity<LoginPresenter> implements Lo
     private String loginType = null;
     // 用户唯一信息
     private String userId;
+
+
+    private String token;
+
 
     @BindView(R.id.img_select)
     ImageView img_select;
@@ -97,16 +106,27 @@ public class LoginActivity extends BaseMvpActivity<LoginPresenter> implements Lo
         switch (v.getId()) {
             case R.id.wx_login:
                 // 微信登录
-                if (!img_select.isSelected()) {
+                // 微信登录
+                if (!img_select.isSelected()){
                     ToastUtils.shortShowStr(mContext, "请选择同意");
                     return;
                 }
-                if (Util.isWeixinAvilible(mContext)) {
-                    qqLogin(Wechat.NAME);
-                    loginType = Wechat.NAME;
-                } else {
+                if (!Util.isWeixinAvilible(mContext)){
                     ToastUtils.shortShowStr(mContext, "请先安装微信客户端");
+                    return;
                 }
+                tencentLogin(Wechat.NAME);
+                loginType = Wechat.NAME;
+//                if (!img_select.isSelected()) {
+//                    ToastUtils.shortShowStr(mContext, "请选择同意");
+//                    return;
+//                }
+//                if (Util.isWeixinAvilible(mContext)) {
+//                    tencentLogin(Wechat.NAME);
+//                    loginType = Wechat.NAME;
+//                } else {
+//                    ToastUtils.shortShowStr(mContext, "请先安装微信客户端");
+//                }
                 break;
             case R.id.qq_login:
                 // qq登录
@@ -115,7 +135,7 @@ public class LoginActivity extends BaseMvpActivity<LoginPresenter> implements Lo
                     return;
                 }
                 if (Util.isQQClientAvailable(mContext)) {
-                    qqLogin(QQ.NAME);
+                    tencentLogin(QQ.NAME);
                     loginType = QQ.NAME;
                 } else {
                     ToastUtils.shortShowStr(mContext, "请先安装QQ客户端");
@@ -147,23 +167,73 @@ public class LoginActivity extends BaseMvpActivity<LoginPresenter> implements Lo
         }
     }
 
-    private void qqLogin(String str) {
+//    private void tencentLogin(String str) {
+//        Platform platform = ShareSDK.getPlatform(str);
+//        ShareSDK.setActivity(this);
+//        platform.setPlatformActionListener(new PlatformActionListener() {
+//            @Override
+//            public void onComplete(Platform platform, int action, HashMap<String, Object> hashMap) {
+//                if (action == Platform.ACTION_USER_INFOR) {
+//                    PlatformDb platDB = platform.getDb();//获取数平台数据DB
+//                    //通过DB获取各种数据
+//                    String token = platDB.getToken();
+//                    String userGender = platDB.getUserGender();
+//                    userIcon = platDB.getUserIcon();
+//                    userId = platDB.getUserId();
+//                    userName = platDB.getUserName();
+//
+//                    User user = new User();
+//                    UserInfo userInfo = new UserInfo();
+//                    if (QQ.NAME.equals(str)) {
+//                        userInfo.setType(4);
+//                    } else if (Wechat.NAME.equals(str)) {
+//                        userInfo.setType(3);
+//                    }
+//                    userInfo.setUnionInfo(userId);
+//                    userInfo.setNickName(userName);
+//                    userInfo.setHeadImgUrl(userIcon);
+//                    userInfo.setAppId(Constants.WX_APP_ID);
+//                    user.setParam(userInfo);
+//
+//                    Message message = new Message();
+//                    message.what = 1;
+//                    Bundle bundle = new Bundle();
+//                    bundle.putSerializable("loginParam", (Serializable) user);
+//                    message.setData(bundle);
+//                    handler.sendMessage(message);
+//                }
+//            }
+//
+//            @Override
+//            public void onError(Platform platform, int i, Throwable throwable) {
+//            }
+//
+//            @Override
+//            public void onCancel(Platform platform, int i) {
+//            }
+//        });
+//        platform.showUser(null);
+//    }
+
+
+    private void tencentLogin(String str) {
         Platform platform = ShareSDK.getPlatform(str);
         ShareSDK.setActivity(this);
         platform.setPlatformActionListener(new PlatformActionListener() {
+
             @Override
             public void onComplete(Platform platform, int action, HashMap<String, Object> hashMap) {
                 if (action == Platform.ACTION_USER_INFOR) {
                     PlatformDb platDB = platform.getDb();//获取数平台数据DB
                     //通过DB获取各种数据
-                    String token = platDB.getToken();
+                    token = platDB.getToken();
                     String userGender = platDB.getUserGender();
                     userIcon = platDB.getUserIcon();
                     userId = platDB.getUserId();
                     userName = platDB.getUserName();
 
                     User user = new User();
-                    UserInfo userInfo = new UserInfo();
+                    UserInfos userInfo = new UserInfos();
                     if (QQ.NAME.equals(str)) {
                         userInfo.setType(4);
                     } else if (Wechat.NAME.equals(str)) {
@@ -194,6 +264,7 @@ public class LoginActivity extends BaseMvpActivity<LoginPresenter> implements Lo
         });
         platform.showUser(null);
     }
+
 
     @Override
     public void httpCallback(LoginResponse loginResponse) {
@@ -250,17 +321,17 @@ public class LoginActivity extends BaseMvpActivity<LoginPresenter> implements Lo
 
                 if (!TextUtils.isEmpty(level)) {
                     // 已开通会员
-                    tz(level, dueTime);
+                    notice(level, dueTime);
                 } else {
                     // 未开通会员
-                    tz("", "");
+                    notice("", "");
                 }
             }
         }
     }
 
-    private void tz(String level, String dueTime) {
-        /*EventBusMessage eventBusMessage = new EventBusMessage();
+    private void notice(String level, String dueTime) {
+        EventBusMessage eventBusMessage = new EventBusMessage();
         eventBusMessage.setUserIcon(userIcon);
         eventBusMessage.setUserName(userName);
         eventBusMessage.setLevel(level);
@@ -268,12 +339,12 @@ public class LoginActivity extends BaseMvpActivity<LoginPresenter> implements Lo
         EventBus.getDefault().post(eventBusMessage);
 
         // 登录成功关闭未提示
-        CloseTsMessage closeTsMessage = new CloseTsMessage();
+        CloseLoginMessage closeTsMessage = new CloseLoginMessage();
         closeTsMessage.setTs(true);
         EventBus.getDefault().post(closeTsMessage);
 
-        Intent inten = new Intent(com.juguo.officefamily.ui.activity.LoginActivity.this, MainActivity.class);
+        Intent inten = new Intent(com.juguo.ocr.ui.activity.LoginActivity.this, MainActivity.class);
         startActivity(inten);
-        finish();*/
+        finish();
     }
 }
