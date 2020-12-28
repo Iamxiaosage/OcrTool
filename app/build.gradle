@@ -93,7 +93,7 @@ MobSDK {
             }
             Wechat {
                 appId "wx499160198874eb51"
-                appSecret "2639cf2a362b0e9696e4212889394574"
+                appSecret "f37b4cdc3c9ac07015dd2c340539ee98"
                 userName "gh_afb25ac019c9"
                 path "pages/index/index.html?id=1"
                 withShareTicket true
@@ -101,7 +101,7 @@ MobSDK {
             }
             WechatMoments {
                 appId "wx499160198874eb51"
-                appSecret "2639cf2a362b0e9696e4212889394574"
+                appSecret "f37b4cdc3c9ac07015dd2c340539ee98"
             }
         }
     }

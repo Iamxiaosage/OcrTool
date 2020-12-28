@@ -20,8 +20,10 @@ public class Constants {
     public static final String WX_MCH_ID = "iui";
     // 微信支付 商品平台API密钥
     //public static final String WX_PRIVATE_KEY = "1d63792986ea3383659af41d62956ca6";
+//    public static final String WX_PRIVATE_KEY = "f37b4cdc3c9ac07015dd2c340539ee98";
     public static final String WX_PRIVATE_KEY = "wstl2016wstl2016wstl2016wstl2016";
-//2639cf2a362b0e9696e4212889394574
+
+    //2639cf2a362b0e9696e4212889394574
     // 穿山甲
     public static final String CSJ_APP_ID = "5126521";// 应用id
     public static final String CSJ_CODE_ID = "887412015";// 代码位id
